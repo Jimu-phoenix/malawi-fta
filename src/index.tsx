@@ -256,7 +256,6 @@ function App(): JSX.Element {
   const [scrollBack, setScrollBack] = useState(0);
   const historyRef = useRef<ChatCompletionMessageParam[]>([]);
   const nextIdRef = useRef(1);
-  const streamingRef = useRef<{ id: number; text: string } | null>(null);
 
   function addMessage(kind: UiMessageKind, text: string) {
     const id = nextIdRef.current;
@@ -290,6 +289,10 @@ function App(): JSX.Element {
     addMessage("user", trimmed);
     setIsThinking(true);
 
+    // Local streaming state: avoids ref null-dereference races.
+    let streamingMessageId: number | null = null;
+    let streamingText = "";
+
     try {
       const result = await runAgentTurn(
         historyRef.current,
@@ -322,29 +325,26 @@ function App(): JSX.Element {
           }
         },
         (chunk) => {
-          if (streamingRef.current === null) {
+          if (streamingMessageId === null) {
             const id = nextIdRef.current;
             nextIdRef.current += 1;
-            streamingRef.current = { id, text: "" };
+            streamingMessageId = id;
+            streamingText = "";
             setMessages((current) => [...current, { id, kind: "assistant", text: "" }]);
           }
-          // Defensive: a late chunk can arrive after streamingRef was reset.
-          if (streamingRef.current === null) return;
-          streamingRef.current.text += chunk;
+          streamingText += chunk;
           setMessages((current) =>
             current.map((message) =>
-              message.id === streamingRef.current!.id
-                ? { ...message, text: streamingRef.current!.text }
+              message.id === streamingMessageId
+                ? { ...message, text: streamingText }
                 : message,
             ),
           );
         },
       );
       historyRef.current = result.messages;
-      if (streamingRef.current === null) {
+      if (streamingMessageId === null) {
         addMessage("assistant", result.reply || "(no response)");
-      } else {
-        streamingRef.current = null;
       }
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
