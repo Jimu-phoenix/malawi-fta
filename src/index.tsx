@@ -239,9 +239,9 @@ function MessageRow({ message }: { message: UiMessage }): JSX.Element {
 
   return (
     <Box key={message.id} marginBottom={1}>
-      {userLabel !== null && <>{userLabel}{" "}</>}
-      {agentLabel !== null && <>{agentLabel}{" "}</>}
-      {errorLabel !== null && <>{errorLabel}{" "}</>}
+      {userLabel !== null && <>{userLabel}<Text> </Text></>}
+      {agentLabel !== null && <>{agentLabel}<Text> </Text></>}
+      {errorLabel !== null && <>{errorLabel}<Text> </Text></>}
       {toolCallLabel}
       {toolResultLabel}
       {typeof body === "string" ? <Text>{body}</Text> : body}
