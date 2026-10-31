@@ -39,6 +39,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 CREATE TABLE IF NOT EXISTS meal_log (
   id INTEGER PRIMARY KEY,
+  meal_id TEXT,
   user_id TEXT,
   logged_at TEXT,
   food_id TEXT,
