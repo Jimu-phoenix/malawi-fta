@@ -1,0 +1,317 @@
+food_code,food_group,food_name,source_ref,page
+MW01_0001,Staples,"African cake, (Chikondamoyo/Chigumu cha nthochi ndi dzira)",R06,19
+MW01_0002,Staples,"Banana fritters, (Zitumbuwa)",R07,19
+MW01_0003,Staples,"Bread, wheat, brown, homemade (Buledi wa bulawuni)",R44,19
+MW01_0004,Staples,"Bread, wheat, white, commercial, (Buledi woyera)",2,19
+MW01_0005,Staples,"Bread, wheat, white, homemade, (Buledi woyera)",8,19
+MW01_0006,Staples,"Cake, banana, (Keke ya nthochi)",R30,19
+MW01_0007,Staples,"Cake, plain, (Keke)",R65,19
+MW01_0008,Staples,"Cassava stew, with pigeon pea, (Chinangwa chophika ndi nandolo)",R17,19
+MW01_0009,Staples,"Cassava thick porridge, (Nsima ya kondowole)",R16,19
+MW01_0010,Staples,"Cassava, tuber, boiled, (Chinangwa chophika)",9,19
+MW01_0011,Staples,"Cassava, tuber, raw, (Chinangwa chachiwisi)",10,20
+MW01_0012,Staples,"Cocoyam, tuber, boiled, (Masimbi/koko wowilitsa)",WA,20
+MW01_0013,Staples,"Cocoyam, tuber, raw, (Masimbi/koko)",WA,20
+MW01_0014,Staples,Doughnuts (Mandasi),R05,20
+MW01_0015,Staples,"Dumplings, (Dampuling'i)",R28,20
+MW01_0016,Staples,"Finger millet, grain, raw, (Mawere)",10,20
+MW01_0017,Staples,"Flour, cassava, raw, (Ufa wa kondowole)",11,20
+MW01_0018,Staples,"Flour, maize, white, degermed-dehulled, unfortified, raw, (Ufa wa galamilu)",4,20
+MW01_0019,Staples,"Flour, maize, white, whole, unfortified, raw, (Ufa wa mgaiwa)",6,20
+MW01_0020,Staples,"Flour, maize, white, degermed-dehulled, fermented, unfortified, raw, (Ufa woyera)",9,20
+MW01_0021,Staples,"Flour, maize-soy, commercial, raw, (Ufa wosakaniza chimanga ndi soya/ufa wa likuni phala)",6,21
+MW01_0022,Staples,"Flour, sorghum, degermed, raw, Sorghum bicolor, (Ufa wa mapira)",9,21
+MW01_0023,Staples,"Flour, wheat, cake (Ufa wa tirigu wama keke)",ZA,21
+MW01_0024,Staples,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",8,21
+MW01_0025,Staples,"French fries/chips, (Chipisi)",R19,21
+MW01_0026,Staples,"Macaroni/Spaghetti, unenriched, cooked",R71,21
+MW01_0027,Staples,"Macaroni/Spaghetti, wholewheat, cooked",USDA,21
+MW01_0028,Staples,"Maize and soya thick porridge, (Nsima ya ufa wa chimanga ndi soya)",R21,21
+MW01_0029,Staples,"Maize flour snack, fried, (Kadyaubwerere/Mbajira)",R39,21
+MW01_0030,Staples,"Maize soft porridge, whole flour, with groundnut flour (Phala la mgaiwa lothila nsinjilo)",R02,21
+MW01_0031,Staples,"Maize thick porridge, degermed-dehulled flour, (Nsima ya galamilu)",R18,22
+MW01_0032,Staples,"Maize thick porridge, refined flour, (Nsima ya ufa oyera)",R15,22
+MW01_0033,Staples,"Maize thick porridge, white, whole flour, (Nsima ya mgaiwa)",4,22
+MW01_0034,Staples,"Maize thick porridge, white, whole flour, (Nsima ya mgaiwa), Calculated",R01,22
+MW01_0035,Staples,"Maize, bran, Zea mays, (Deya/Gaga)",9,22
+MW01_0036,Staples,"Maize, grain, orange, raw, Zea mays, (Mthikinya)",7,22
+MW01_0037,Staples,"Maize, grain, white, raw, (Chimanga choyera)",10,22
+MW01_0038,Staples,"Maize, grain, white, raw, Se fertilizer applied, (Chimanga choyera)",14,22
+MW01_0039,Staples,"Maize, grain, white, raw, Zea mays, (Chimanga choyera)",7,22
+MW01_0040,Staples,"Maize, green, boiled, (Dowe wowilitsa/Chimanga chachiwisi chopika)",9,22
+MW01_0041,Staples,"Milk scones, (Sikono ya mkaka)",R22,23
+MW01_0042,Staples,"Oats, cooked, (Maotsi ophika)",ZA,23
+MW01_0043,Staples,"Oats, raw, (Maotsi)",ZA,23
+MW01_0044,Staples,"Pancakes, wheat flour and maize flour, (Mandasi a ufa wachimanga ndi tiligu)",R29,23
+MW01_0045,Staples,"Plantain and bean casserole, (Mbalagha za nyemba)",R66,23
+MW01_0046,Staples,"Plantain and beef casserole, (Mbalagha za nyama ya ng'ombe)",R10,23
+MW01_0047,Staples,"Plantain and fish casserole, (Mbalagha za usipa)",R24,23
+MW01_0048,Staples,"Plantain, green, boiled, Musa paradisiaca, (Matochi)",31,23
+MW01_0049,Staples,Potato pie,R31,23
+MW01_0050,Staples,"Potato, local variety, raw, (Mbatata ya kachewere)",30,23
+MW01_0051,Staples,"Pumpkin fritters, (Mandasi a maungu)",R50,24
+MW01_0052,Staples,"Rice porridge, (Phala la mpunga)",R03,24
+MW01_0053,Staples,Rice pudding,R42,24
+MW01_0054,Staples,Rice pudding with eggs,R43,24
+MW01_0055,Staples,"Rice, brown, raw, Oryza sativa, (Mpunga wa bulawuni)",5,24
+MW01_0056,Staples,"Rice, soaked, (Mpunga woviika)",40,24
+MW01_0057,Staples,"Rice, white, cooked, (Mpunga woyera wophika)",R37,24
+MW01_0058,Staples,"Rice, white, raw, Oryza sativa, (Mpunga woyera)",9,24
+MW01_0059,Staples,"Samoosa, dough, raw",R20,24
+MW01_0060,Staples,"Sorghum, wholegrain, raw, Sorghum bicolor, (Mapira)",10,24
+MW01_0061,Staples,"Steamed maize & banana snack, (Mkate)",R57,25
+MW01_0062,Staples,"Sweet potato fritters, (Zitumbuwa za mbatata)",R32,25
+MW01_0063,Staples,"Sweet potato, orange fleshed, raw, (Mbatata yofiila mkati)",29,25
+MW01_0064,Staples,"Sweet potato, orange fleshed, with milk, (Mbatata yofiila mkati yothira mkaka)",R68,25
+MW01_0065,Staples,"Sweet potato, white-fleshed, raw, Ipomoea batatas, (Mbatata zoyera mkati)",10,25
+MW01_0066,Staples,"Sweet potato, white-fleshed, without skin, boiled, Ipomoea batatas, (Mbatata yoyera mkati yowilitsa)",9,25
+MW01_0067,Staples,"Sweet potatoes, boiled, with groundnut flour, (Futali wa mbatata yakholowa)",R08,25
+MW01_0068,Staples,"Tuber, wild water lily, freeze dried, boiled, Nymphaea Petersiana, (Nyika)",1,25
+MW01_0069,Staples,"Tuber, wild water lily, sun dried, raw, Nymphaea Petersiana, (Nyika)",1,25
+MW01_0070,Staples,"Wheat, bran, selected (Deya wa tiligu)",ZA,25
+MW02_0001,Legumes,"Bean and groundnut stew, (Ndawva)",R12,34
+MW02_0002,Legumes,"Bean soup, (Supu wa nyemba)",R45,34
+MW02_0003,Legumes,"Bean stew, (Nyemba zouma zokazingira)",R11,34
+MW02_0004,Legumes,"Bean, kidney, dry, Phaseolus vulgaris, (Nyemba zouma)",9,34
+MW02_0005,Legumes,"Beans, boiled, (Nyemba zowilitsa)",R66A,34
+MW02_0006,Legumes,"Cowpea relish, (Khobwe wowilitsa ndi tomato)",R62,34
+MW02_0007,Legumes,"Cowpea, dry, Vigna unguiculata, (Khobwe/Nseula wouma)",10,34
+MW02_0008,Legumes,"Cowpeas, boiled, Vigna unguiculata, (Khobwe wowilitsa)",9,34
+MW02_0009,Legumes,"Flour, boiled soybean, (Ufa wa soya)",6,34
+MW02_0010,Legumes,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",9,34
+MW02_0011,Legumes,"Flour, pigeon pea, Canjanus cajan, (Ufa wa nandolo)",8,35
+MW02_0012,Legumes,"Flour, roasted soybean, (Ufa wa soya)",6,35
+MW02_0013,Legumes,"Groundnut sauce, (Thendo)",R09,35
+MW02_0014,Legumes,"Groundnut, dry, Arachis hypogae, (Mtedza wouma)",10,35
+MW02_0015,Legumes,"Groundnut, dry, boiled, Arachis hypogae, (Mtedza wouma wophika)",9,35
+MW02_0016,Legumes,"Peanut butter, smooth style, with salt",USDA,35
+MW02_0017,Legumes,"Pigeon pea, dry, Canjanus cajan, (Nandolo wowuma)",9,35
+MW02_0018,Legumes,"Pigeon pea, green, boiled, Canjanus cajan, (Nandolo wamuwisi owilitsa)",9,35
+MW02_0019,Legumes,"Soybean, dry, (Soya)",10,35
+MW03_0001,Animal Foods,"Beef mince, fried, (Nyama ya ng'ombe yogaya yokazinga)",R20B,39
+MW03_0002,Animal Foods,"Beef stew, (Nyama ya ng'ombe yokazingira)",R27,39
+MW03_0003,Animal Foods,"Beef, kidney, raw, (Impsyo ya ng'ombe)",WA,39
+MW03_0004,Animal Foods,"Beef, liver, raw, (Chiwindi cha ng'ombe)",WA,39
+MW03_0005,Animal Foods,"Beef, liver, stew, (chiwindi cha ng'ombe chokazingira)",R53,39
+MW03_0006,Animal Foods,"Beef, raw, (Nyama ya ng'ombe)",22,39
+MW03_0007,Animal Foods,"Beef, tripe, raw, (Nthumbwana za ng'ombe)",WA,39
+MW03_0008,Animal Foods,"Caterpillar, dry, roasted, Usta terphrichore, (Nyamanyama zootcha)",23,39
+MW03_0009,Animal Foods,"Caterpillar, roasted, Imbrasia ertli, (Mphalabungu zootcha)",23,39
+MW03_0010,Animal Foods,"Chicken stew, (Nkhuku yokazingira)",R41,39
+MW03_0011,Animal Foods,"Chicken, meat with skin, free range, local, raw, (Nkhuku ya chikuda)",26,40
+MW03_0012,Animal Foods,"Crabs, boiled, (Nkhanu/Nkhala zowilitsa)",9,40
+MW03_0013,Animal Foods,"Egg, chicken, boiled, (Dzira lankhuku lowilitsa)",R59,40
+MW03_0014,Animal Foods,"Egg, chicken, scrambled, (Dzira la nkhuku lokanya)",R61,40
+MW03_0015,Animal Foods,"Egg, chicken, whole, raw, (Dzira la nkhuku)",MZF,40
+MW03_0016,Animal Foods,"Egg, duck, boiled, (Dzira la bakha lowilitsa/lobwatitsa)",9,40
+MW03_0017,Animal Foods,"Eggs, chicken, boiled, with peas, (Mazira ankhuku owilitsa ndi nsawawa)",R63,40
+MW03_0018,Animal Foods,"Eggs, chicken, boiled, with tomatoes, (Mazira ankhuku owilitsa othila tomato)",R60,40
+MW03_0019,Animal Foods,"Fish powder stew, (Supu ya ufa wansomba)",R13,40
+MW03_0020,Animal Foods,"Fish, catfish, dry, Clarius gariepinus, (Mlamba wouma)",9,40
+MW03_0021,Animal Foods,"Fish, catfish, fresh, fried, (Mlamba wokazinga)",R34,41
+MW03_0022,Animal Foods,"Fish, catfish, raw, Synodontis, (Nkholokolo)",WA,41
+MW03_0023,Animal Foods,"Fish, catfish, smoked, Clarias gariepinus, (Mlamba wowamba)",9,41
+MW03_0024,Animal Foods,"Fish, fillet, fresh, Rhamphochromis esox (Mnofu wa mcheni wa fuleshi)",13,41
+MW03_0025,Animal Foods,"Fish, fresh, gutted, Rhamphochromis esox, (Mcheni wa fuleshi)",13,41
+MW03_0026,Animal Foods,"Fish, gutted, frozen, Rhamphochromis esox, (Mcheni wa fuleshi)",13,41
+MW03_0027,Animal Foods,"Fish, lake sardine, whole, dried, Engraulicypris breianalis, (Usipa wowuma)",9,41
+MW03_0028,Animal Foods,"Fish, powder, Engraulicypris sardella, (Ufa wausipa)",6,41
+MW03_0029,Animal Foods,"Fish, tilapia, fresh, fried, (Chambo chokazinga)",R52,41
+MW03_0030,Animal Foods,"Fish, tilapia, fresh, grilled, (Chambo chootcha)",R33,41
+MW03_0031,Animal Foods,"Fish, tilapia, whole, dried, Oreochromis shiranus, (Chambo chouma)",9,42
+MW03_0032,Animal Foods,"Fish, tilapia, whole, fresh, Oreochromis shiranus, (Chambo cha fuleshi)",27,42
+MW03_0033,Animal Foods,"Fish, whole, fresh, Barbus paludinosus, (Matemba a fuleshi)",28,42
+MW03_0034,Animal Foods,"Fish, whole, fresh, Copadichromis inornatus, (Utaka wa fuleshi)",15,42
+MW03_0035,Animal Foods,"Fish, whole, fresh, Engraulicypris sardella, (Usipa wa fuleshi)",15,42
+MW03_0036,Animal Foods,"Fish, whole, fresh, Oreochromis lidole, (Chambo cha fuleshi)",15,42
+MW03_0037,Animal Foods,"Fish, whole, fresh, Rhamphochromis esox, (Mcheni wa fuleshi)",13,42
+MW03_0038,Animal Foods,"Fish, whole, fresh, Rhamphochromis ferox, (Mcheni wa fuleshi)",15,42
+MW03_0039,Animal Foods,"Fish, whole, par-boiled, sun dried, Engraulicypris sardella, (Usipa ofutsa)",15,42
+MW03_0040,Animal Foods,"Fish, whole, salted, smoked, Rhamphochromis esox, (Mcheni wowamba)",13,42
+MW03_0041,Animal Foods,"Fish, whole, salted, sun dried, Rhamphochromis esox, (Mcheni wadzuwa)",13,43
+MW03_0042,Animal Foods,"Fish, whole, smoked, Barbus paludinosus, (Matemba owamba)",28,43
+MW03_0043,Animal Foods,"Fish, whole, smoked, Copadichromis inornatus, (Utaka wowamba)",15,43
+MW03_0044,Animal Foods,"Fish, whole, smoked, Oreochromis lidole, (Chambo chowamba)",15,43
+MW03_0045,Animal Foods,"Fish, whole, smoked, Rhamphochromis esox, (Mcheni owamba)",13,43
+MW03_0046,Animal Foods,"Fish, whole, smoked, Rhamphochromis ferox, (Mcheni owamba)",15,43
+MW03_0047,Animal Foods,"Fish, tilapia, whole, smoked, sun dried, Oreochromis shiranus, (Chambo chowamba)",9,43
+MW03_0048,Animal Foods,"Fish, whole, sun dried from fresh, Rhamphochromis esox, (Mcheni wadzuwa)",13,43
+MW03_0049,Animal Foods,"Fish, whole, sun dried, Copadichromis inornatus, (Utaka wadzuwa)",15,43
+MW03_0050,Animal Foods,"Fish, whole, sun dried, Engraulicypris sardella, (Usipa wadzuwa)",15,43
+MW03_0051,Animal Foods,"Fish, whole, sun dried, Rhamphochromis ferox, (Mcheni wadzuwa)",15,44
+MW03_0052,Animal Foods,"Goat, meat, raw, (Nyama ya mbuzi)",WA,44
+MW03_0053,Animal Foods,"Lake flies stew, (Nkhungu zotendera)",R26,44
+MW03_0054,Animal Foods,"Lake flies, dry, roasted, Chaoborus edulis, (Nkhungu zokazinga)",23,44
+MW03_0055,Animal Foods,"Lake sardine stew, with groundnut flour, (Usipa wotendera)",R25,44
+MW03_0056,Animal Foods,"Lamb, meat, roast, (Nyama ya nkhosa yootcha)",R54,44
+MW03_0057,Animal Foods,"Locust, raw, (Dzombe)",WA,44
+MW03_0058,Animal Foods,"Locust, roasted, (Dzombe lokazinga)",9,44
+MW03_0059,Animal Foods,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",20,44
+MW03_0060,Animal Foods,"Milk, powder, full fat, vitamin A, D and Fe enriched, (Mkaka ng'ombe wa ufa)",ZA,44
+MW03_0061,Animal Foods,"Milkshake, banana",R35,45
+MW03_0062,Animal Foods,"Mutton stew, (Nyama ya nkhosa yokazingira)",R56,45
+MW03_0063,Animal Foods,"Mutton, meat, ~20% fat, raw, (Nyama ya Nkhosa)",WA,45
+MW03_0064,Animal Foods,"Pork, meat, ~20% fat, raw, Sus Scrofa domesticus, (Nyama ya nkhumba)",WA,45
+MW03_0065,Animal Foods,"Quail, breast, raw, Coturnix japonica, (Chinziri)",19,45
+MW03_0066,Animal Foods,"Rabbit stew, (Nyama ya kalulu yokazingira)",R55,45
+MW03_0067,Animal Foods,"Rabbit, meat, raw, Oryctolagus cuniculus, (Nyama ya kalulu)",WA,45
+MW03_0068,Animal Foods,"Samoosa, beef filling, fried, (Samusa wa nyama ya ng'ombe wokazinga)",R20C,45
+MW03_0069,Animal Foods,"Termites, dry, Macrotermes subhyanlinus, (Ngumbi)",23,45
+MW04_0001,Vegetables,"Bean, lima, green, fresh, Phaseolus lunatus, (Kabaifa/Kamumpanda)",9,51
+MW04_0002,Vegetables,"Black jack leaves stew, with groundnut flour, (Chisoso chotendela)",R14,51
+MW04_0003,Vegetables,"Cabbage, Chinese, boiled, Brassica chinensis, (Chayinizi)",9,51
+MW04_0004,Vegetables,"Cabbage, raw, (Kabichi)",10,51
+MW04_0005,Vegetables,"Carrot, with skin, raw, (Kaloti)",ZA,51
+MW04_0006,Vegetables,"Eggplant fritters, (Mabilinganya okazinga)",R46,51
+MW04_0007,Vegetables,"Eggplant, raw, (Mabilinganya)",9,51
+MW04_0008,Vegetables,"Green beans, raw, (Zitheba)",10,51
+MW04_0009,Vegetables,"Green pepper, raw, (Gilini pepa)",10,51
+MW04_0010,Vegetables,"Leaves, amaranth, boiled, Amaranthus thunbergii, (Bonongwe wowilitsa)",9,51
+MW04_0011,Vegetables,"Leaves, amaranth, raw, (Bonongwe)",WA,52
+MW04_0012,Vegetables,"Leaves, black jack, raw, (Chisoso)",19,52
+MW04_0013,Vegetables,"Leaves, cassava, boiled, Manihot esculenta, (Ntapasha/Chigwada chowilitsa)",9,52
+MW04_0014,Vegetables,"Leaves, cassava, raw, (Ntapasha/Chigwada)",WA,52
+MW04_0015,Vegetables,"Leaves, cat's whiskers, raw, Cleome gynadra, (Luni)",18,52
+MW04_0016,Vegetables,"Leaves, jews mallow, raw, Corchorus trilocularis, (Denje)",21,52
+MW04_0017,Vegetables,"Leaves, okra, boiled, Abelmoschus esculentus, (Thelele lowilitsa)",9,52
+MW04_0018,Vegetables,"Leaves, pumpkin, boiled, Cucurbita maxima, (Nkhwani wowilitsa)",9,52
+MW04_0019,Vegetables,"Leaves, pumpkin, raw, (Nkhwani)",10,52
+MW04_0020,Vegetables,"Leaves, rape, raw, (Lepu)",10,52
+MW04_0021,Vegetables,"Leaves, roselle, raw, Hibiscus subdaiffa, (Chidede)",21,53
+MW04_0022,Vegetables,"Mushroom stew, with groundnut flour, (Bowa wotendera)",R47,53
+MW04_0023,Vegetables,"Mushroom, indigenous, raw, Cantherellus cibarius, (Bowa wa chiwindi/Malasutwe)",16,53
+MW04_0024,Vegetables,"Mushroom, indigenous, raw, Termitomyces letestui, (Bowa wautale)",16,53
+MW04_0025,Vegetables,"Mushroom, oyster, cultivated, raw, Pleurotus florida, (Bowa wolimidwa)",16,53
+MW04_0026,Vegetables,"Mushroom, relish, (Bowa okazingila)",R38,53
+MW04_0027,Vegetables,"Mushroom, white button, cultivated, raw, Agaricus bisporus, (Bowa wolimidwa)",16,53
+MW04_0028,Vegetables,"Okra relish, (Thelele lobala lokazingira)",R49,53
+MW04_0029,Vegetables,"Okra stew, (Thelele lobala lokupa)",R48,53
+MW04_0030,Vegetables,"Okra, raw, Abelmoschus esculentus, (Therere lobala)",9,53
+MW04_0031,Vegetables,"Onion, raw, (Anyezi)",10,54
+MW04_0032,Vegetables,"Peas, raw, Pisum sativum, (Nsawawa zaziwisi)",ZA,54
+MW04_0033,Vegetables,"Pumpkin leaves stew, (Nkhwani wokazingira)",R04,54
+MW04_0034,Vegetables,"Pumpkin, boiled, Cucurbita maxima, (Dzungu lowiritsa)",9,54
+MW04_0035,Vegetables,"Tomato soup, (Supu wa tomato)",R23,54
+MW04_0036,Vegetables,"Tomato, ripe, raw, (Tomato okupsya)",10,54
+MW05_0001,Fruits,"Apple, average, raw, (Apozi)",ZA,58
+MW05_0002,Fruits,"Avocado, raw, peeled, Persea americana, (Peyala losenda)",9,58
+MW05_0003,Fruits,"Banana, fried, (Nthochi yokazinga)",R64,58
+MW05_0004,Fruits,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",9,58
+MW05_0005,Fruits,"Baobab, raw, Adansonia digitata, (Malambe)",17,58
+MW05_0006,Fruits,"Custard apple, wild, Annona senegalensis, (Mpoza)",USDA,58
+MW05_0007,Fruits,"Fruit salad, fresh, (mango, banana, pineapple & pawpaw)",R67,58
+MW05_0008,Fruits,"Guavas, Psidium guajava, (Gwafa)",9,58
+MW05_0009,Fruits,"Jakjak fruit, Azanza garckeana, (Matowo)",17,58
+MW05_0010,Fruits,"Juice tamarind, homemade, (Juwisi wa bwemba)",R58,58
+MW05_0011,Fruits,"Juice, baobab, homemade, (Juwisi wamalambe)",R36,59
+MW05_0012,Fruits,"Juice, orange, homemade, (Juwisi wa malalanje)",R51,59
+MW05_0013,Fruits,"Jujube, Ziziphus mauritiana, (Masau)",17,59
+MW05_0014,Fruits,"Lemon, raw, peeled, (Ndimu losenda)",ZA,59
+MW05_0015,Fruits,"Loquats, wild, Uapaca kirkiana, (Masuku a mtchire)",USDA,59
+MW05_0016,Fruits,"Mango, ripe, (Mango)",10,59
+MW05_0017,Fruits,"Medlar, African, raw, Vangueria infausta, (Lokwati)",17,59
+MW05_0018,Fruits,"Orange, raw, peeled, Citrus sinensis, (Lalanje losenda)",ZA,59
+MW05_0019,Fruits,"Pawpaw, fresh, (Papaya)",10,59
+MW05_0020,Fruits,"Peach, raw, Prunus persica, (Pichesi)",ZA,60
+MW05_0021,Fruits,"Pineapple, raw, peeled, Ananas comosus, (Nanazi losenda)",ZA,60
+MW05_0022,Fruits,"Plum, Mobola, Parinari curatellifolia, (Maula/Mbula)",17,60
+MW05_0023,Fruits,"Plum, sour, Ximenia caffra, (Mpinjipinji)",17,60
+MW05_0024,Fruits,"Tamarind, fruit, raw, Tamarindus indica, (Bwemba)",WA,60
+MW05_0025,Fruits,"Watermelon, raw, peeled, Citrullus lanatus, (Mavwende/Mavumbe osenda)",ZA,60
+MW06_0001,Fats and Oils,"Margarine, Rama, brick",MZF,63
+MW06_0002,Fats and Oils,"Oil, soybean, fortified, local market, (Mafuta ophikira a soya)",12,63
+MW06_0003,Fats and Oils,"Oil, soybean, fortified, supermarket, (Mafuta ophikira a soya)",12,63
+MW06_0004,Fats and Oils,"Oil, sunflower, fortified, local market, (Mafuta ophikira a mpendadzuwa)",12,63
+MW06_0005,Fats and Oils,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",12,63
+MW07_0001,Baby Foods,"Baby cereal, containing milk, 12 months, strawberry flavor, dry",ZA,65
+MW07_0002,Baby Foods,"Baby cereal, containing milk, 6 months, dry",ZA,65
+MW07_0003,Baby Foods,"Baby cereal, containing milk, 7 months, regular flavor, dry",ZA,65
+MW07_0004,Baby Foods,"Baby cereal, containing milk, 9 months, mixed fruit flavor, dry",ZA,65
+MW07_0005,Baby Foods,"Baby cereal, maize, 6 months, dry",ZA,65
+MW07_0006,Baby Foods,"Baby cereal, maize, 9 months, strawberry and banana flavor, dry (Nestum)",ZA,65
+MW07_0007,Baby Foods,"Baby cereal, mixed cereal, 7 months, dry",ZA,65
+MW07_0008,Baby Foods,"Baby cereal, mixed grain, 7 months, dry",ZA,65
+MW07_0009,Baby Foods,"Baby food (jar), 10 months, banana & berry with yoghurt",ZA,65
+MW07_0010,Baby Foods,"Baby food (jar), 10 months, summer fruit dessert",ZA,66
+MW07_0011,Baby Foods,"Baby food (jar), 6 months, apple",ZA,66
+MW07_0012,Baby Foods,"Baby food (jar), 6 months, banana",ZA,66
+MW07_0013,Baby Foods,"Baby food (jar), 6 months, butternut",ZA,66
+MW07_0014,Baby Foods,"Baby food (jar), 6 months, carrot",ZA,66
+MW07_0015,Baby Foods,"Baby food (jar), 6 months, guava & pear",ZA,66
+MW07_0016,Baby Foods,"Baby food (jar), 6 months, sweet potato",ZA,66
+MW07_0017,Baby Foods,"Baby food (jar), 7 months, apple",ZA,66
+MW07_0018,Baby Foods,"Baby food (jar), 7 months, banana",ZA,66
+MW07_0019,Baby Foods,"Baby food (jar), 7 months, banana & yoghurt",ZA,66
+MW07_0020,Baby Foods,"Baby food (jar), 7 months, butternut",ZA,67
+MW07_0021,Baby Foods,"Baby food (jar), 7 months, carrot",ZA,67
+MW07_0022,Baby Foods,"Baby food (jar), 7 months, mixed vegetables",ZA,67
+MW07_0023,Baby Foods,"Baby food (jar), 7 months, peach",ZA,67
+MW07_0024,Baby Foods,"Baby food (jar), 7 months, pear",ZA,67
+MW07_0025,Baby Foods,"Baby food (jar), 7 months, sweet potato",ZA,67
+MW07_0026,Baby Foods,"Baby food (jar), 7 months, vegetables & beef",ZA,67
+MW07_0027,Baby Foods,"Baby food (jar), 7 months, vegetables & chicken",ZA,67
+MW07_0028,Baby Foods,"Baby food (jar), 8 months, apple",ZA,67
+MW07_0029,Baby Foods,"Baby food (jar), 8 months, apple & banana",ZA,68
+MW07_0030,Baby Foods,"Baby food (jar), 8 months, fruit & yoghurt",ZA,68
+MW07_0031,Baby Foods,"Baby food (jar), 8 months, fruit salad",ZA,68
+MW07_0032,Baby Foods,"Baby food (jar), 8 months, peach",ZA,68
+MW07_0033,Baby Foods,"Baby food (jar), 8 months, pear",ZA,68
+MW07_0034,Baby Foods,"Baby food (jar), 8 months, pears with yoghurt",ZA,68
+MW07_0035,Baby Foods,"Baby food (jar), 8 months, vegetables & chicken",ZA,68
+MW07_0036,Baby Foods,"BMS, acidified follow-up formula, Nan Pelargon 2, reconstituted/100mL",ZA,68
+MW07_0037,Baby Foods,"BMS, acidified formula, Nan Pelargon 1 powder",ZA,68
+MW07_0038,Baby Foods,"BMS, acidified formula, Nan Pelargon 1, reconstituted/100mL",ZA,68
+MW07_0039,Baby Foods,"BMS, acidified, follow-up formula, Nan Pelargon 2 powder",ZA,69
+MW07_0040,Baby Foods,"BMS, casein-predominant formula, Lactogen 1 powder",ZA,69
+MW07_0041,Baby Foods,"BMS, casein-predominant formula, Lactogen 1, reconstituted/100mL",ZA,69
+MW07_0042,Baby Foods,"BMS, follow-up formula Lactogen 2, reconstituted/100mL",ZA,69
+MW07_0043,Baby Foods,"BMS, follow-up formula, Infacare Classic 2 powder",ZA,69
+MW07_0044,Baby Foods,"BMS, follow-up formula, Infacare Classic 2, reconstituted/100mL",ZA,69
+MW07_0045,Baby Foods,"BMS, follow-up formula, Infacare Classic 3 powder",ZA,69
+MW07_0046,Baby Foods,"BMS, follow-up formula, Infacare Classic 3, reconstituted/100mL",ZA,69
+MW07_0047,Baby Foods,"BMS, follow-up formula, Lactogen 2 powder",ZA,69
+MW07_0048,Baby Foods,"BMS, follow-up formula, Lactogen 3, powder",ZA,70
+MW07_0049,Baby Foods,"BMS, follow-up formula, Lactogen 3, reconstituted/100mL",ZA,70
+MW07_0050,Baby Foods,"BMS, follow-up formula, Nan 2 powder",ZA,70
+MW07_0051,Baby Foods,"BMS, follow-up formula, Nan 2, reconstituted/100mL",ZA,70
+MW07_0052,Baby Foods,"BMS, follow-up formula, Nan 3 powder",ZA,70
+MW07_0053,Baby Foods,"BMS, follow-up formula, Nan 3, reconstituted/100mL",ZA,70
+MW07_0054,Baby Foods,"BMS, follow-up formula, S-26 Progress 3 powder",ZA,70
+MW07_0055,Baby Foods,"BMS, follow-up formula, S-26 Progress 3, reconstituted/100mL",ZA,70
+MW07_0056,Baby Foods,"BMS, follow-up formula, S-26 Progress Gold 3 powder",ZA,70
+MW07_0057,Baby Foods,"BMS, follow-up formula, S-26 Progress Gold 3, reconstituted/100mL",ZA,71
+MW07_0058,Baby Foods,"BMS, follow-up formula, S-26 Promil 2 powder",ZA,71
+MW07_0059,Baby Foods,"BMS, follow-up formula, S-26 Promil 2, reconstituted/100mL",ZA,71
+MW07_0060,Baby Foods,"BMS, follow-up formula, S-26 Promil Gold 2 powder",ZA,71
+MW07_0061,Baby Foods,"BMS, follow-up formula, S-26 Promil Gold 2, reconstituted/100mL",ZA,71
+MW07_0062,Baby Foods,"BMS, follow-up formula, soy based, Infasoy 2 powder",ZA,71
+MW07_0063,Baby Foods,"BMS, follow-up formula, soy-based, Infasoy 2, reconstituted/100mL",ZA,71
+MW07_0064,Baby Foods,"BMS, follow-up formula, soy-based, Isomil 2 powder",ZA,71
+MW07_0065,Baby Foods,"BMS, follow-up formula, soy-based, Isomil 2, reconstituted/100mL",ZA,71
+MW07_0066,Baby Foods,"BMS, follow-up formula, soy-based, Isomil 3, reconstituted/100mL",ZA,72
+MW07_0067,Baby Foods,"BMS, premature, whey-predominant formula, PreNan powder",ZA,72
+MW07_0068,Baby Foods,"BMS, premature, whey-predominant formula, PreNan, reconstituted/100mL",ZA,72
+MW07_0069,Baby Foods,"BMS, soy-based formula, Infasoy 1 powder",ZA,72
+MW07_0070,Baby Foods,"BMS, soy-based formula, Infasoy 1, reconstituted/100mL",ZA,72
+MW07_0071,Baby Foods,"BMS, soy-based formula, Isomil 1 powder",ZA,72
+MW07_0072,Baby Foods,"BMS, soy-based formula, Isomil 1, reconstituted/100mL",ZA,72
+MW07_0073,Baby Foods,"BMS, whey-predominant formula, Infacare Classic 1 powder",ZA,72
+MW07_0074,Baby Foods,"BMS, whey-predominant formula, Infacare Classic 1, reconstituted/100mL",ZA,72
+MW07_0075,Baby Foods,"BMS, whey-predominant formula, Nan 1 powder",ZA,73
+MW07_0076,Baby Foods,"BMS, whey-predominant formula, Nan 1, reconstituted/100mL",ZA,73
+MW07_0077,Baby Foods,"BMS, whey-predominant formula, S-26 Classic 1, powder",ZA,73
+MW07_0078,Baby Foods,"BMS, whey-predominant formula, S-26 Classic 1, reconstituted/100mL",ZA,73
+MW07_0079,Baby Foods,"BMS, whey-predominant formula, S-26 Comfort Gold, powder",ZA,73
+MW07_0080,Baby Foods,"BMS, whey-predominant formula, S-26 Comfort Gold, reconstituted/100mL",ZA,73
+MW07_0081,Baby Foods,"BMS, whey-predominant formula, S-26 Gold 1 powder",ZA,73
+MW07_0082,Baby Foods,"BMS, whey-predominant formula, S-26 Gold 1, reconstituted/100mL",ZA,73
+MW07_0083,Baby Foods,"Maize soft porridge, with egg & vegetable, (Phala lamgaiwa loika mazira ndi masamba)",R70,73
+MW07_0084,Baby Foods,"Rice porridge, with carrot, milk & groundnut flour, (Phala la mpunga lothira kaloti, mkaka ndi nsinjilo)",R69,73
+MW08_0001,Miscellaneous,"Fortificant premix, IS-353, DSM",3,76
+MW08_0002,Miscellaneous,"Ready-to-use therapeutic food (RUTF), milk, maize, soya, sorghum (MSMS)",25,76
+MW08_0003,Miscellaneous,"Ready-to-use therapeutic food (RUTF), milk-free, soya, maize, sorghum (FSMS)",25,76
+MW08_0004,Miscellaneous,"Ready-to-use therapeutic food (RUTF), peanut, milk (PM)",25,76
+MW08_0005,Miscellaneous,"Sugar, brown, fortified, (Shuga wa bulawuni)",24,76
+MW08_0006,Miscellaneous,"Sugar, white, fortified, (Shuga woyera)",24,76
+MW08_0007,Miscellaneous,"Sugarcane, raw, Saccharum officinarum, (Mzimbe)",9,76
+MW08_0008,Miscellaneous,"Water, (Madzi)",10A,76

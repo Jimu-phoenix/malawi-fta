@@ -8,7 +8,12 @@
     "dev": "tsx src/index.tsx",
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "smoke": "tsx scripts/smoke.ts"
+    "smoke": "tsx scripts/smoke.ts",
+    "split-names": ".venv/bin/python scripts/split_names.py",
+    "validate-energy": ".venv/bin/python scripts/validate_energy.py",
+    "import-data": "tsx scripts/import_data.ts",
+    "setup-data": "npm run split-names && npm run validate-energy && npm run import-data",
+    "agent-test": "tsx scripts/agent_test.ts"
   },
   "keywords": [],
   "author": "",

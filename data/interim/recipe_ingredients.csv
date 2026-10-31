@@ -1,0 +1,298 @@
+recipe_code,recipe_name,yield_factor,ingredient_code,ingredient_name,grams_per_100g_recipe
+MW01_0001,"African cake, (Chikondamoyo/Chigumu cha nthochi ndi dzira)",0.84,MW05_0004,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",37
+MW01_0001,"African cake, (Chikondamoyo/Chigumu cha nthochi ndi dzira)",0.84,MW01_0019,"Flour, maize, white, whole, unfortified, raw, (Ufa wa mgaiwa)",36
+MW01_0001,"African cake, (Chikondamoyo/Chigumu cha nthochi ndi dzira)",0.84,MW08_0008,"Water, (Madzi)",23
+MW01_0001,"African cake, (Chikondamoyo/Chigumu cha nthochi ndi dzira)",0.84,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",5
+MW01_0002,"Banana fritters, (Zitumbuwa)",0.89,MW05_0004,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",80
+MW01_0002,"Banana fritters, (Zitumbuwa)",0.89,MW01_0019,"Flour, maize, white, whole, unfortified, raw, (Ufa wa mgaiwa)",17
+MW01_0002,"Banana fritters, (Zitumbuwa)",0.89,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",2
+MW01_0002,"Banana fritters, (Zitumbuwa)",0.89,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",1
+MW01_0003,"Bread, wheat, brown, homemade (Buledi wa bulawuni)",0.9,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",79
+MW01_0003,"Bread, wheat, brown, homemade (Buledi wa bulawuni)",0.9,MW08_0008,"Water, (Madzi)",10
+MW01_0003,"Bread, wheat, brown, homemade (Buledi wa bulawuni)",0.9,MW06_0001,"Margarine, Rama, brick",4
+MW01_0003,"Bread, wheat, brown, homemade (Buledi wa bulawuni)",0.9,MW01_0070,"Wheat, bran, selected (Deya wa tiligu)",4
+MW01_0003,"Bread, wheat, brown, homemade (Buledi wa bulawuni)",0.9,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",2
+MW01_0006,"Cake, banana, (Keke ya nthochi)",0.88,MW05_0004,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",300
+MW01_0006,"Cake, banana, (Keke ya nthochi)",0.88,MW01_0023,"Flour, wheat, cake (Ufa wa tirigu wama keke)",240
+MW01_0006,"Cake, banana, (Keke ya nthochi)",0.88,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",125
+MW01_0006,"Cake, banana, (Keke ya nthochi)",0.88,MW06_0001,"Margarine, Rama, brick",115
+MW01_0006,"Cake, banana, (Keke ya nthochi)",0.88,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",100
+MW01_0007,"Cake, plain, (Keke)",0.91,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",38
+MW01_0007,"Cake, plain, (Keke)",0.91,MW01_0023,"Flour, wheat, cake (Ufa wa tirigu wama keke)",36
+MW01_0007,"Cake, plain, (Keke)",0.91,MW06_0001,"Margarine, Rama, brick",9
+MW01_0007,"Cake, plain, (Keke)",0.91,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",9
+MW01_0007,"Cake, plain, (Keke)",0.91,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",8
+MW01_0008,"Cassava stew, with pigeon pea, (Chinangwa chophika ndi nandolo)",2.53,MW08_0008,"Water, (Madzi)",45
+MW01_0008,"Cassava stew, with pigeon pea, (Chinangwa chophika ndi nandolo)",2.53,MW01_0011,"Cassava, tuber, raw, (Chinangwa chachiwisi)",33
+MW01_0008,"Cassava stew, with pigeon pea, (Chinangwa chophika ndi nandolo)",2.53,MW02_0017,"Pigeon pea, dry, Canjanus cajan, (Nandolo wowuma)",13
+MW01_0008,"Cassava stew, with pigeon pea, (Chinangwa chophika ndi nandolo)",2.53,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",7
+MW01_0008,"Cassava stew, with pigeon pea, (Chinangwa chophika ndi nandolo)",2.53,MW04_0031,"Onion, raw, (Anyezi)",2
+MW01_0009,"Cassava thick porridge, (Nsima ya kondowole)",0.75,MW01_0017,"Flour, cassava, raw, (Ufa wa kondowole)",32
+MW01_0009,"Cassava thick porridge, (Nsima ya kondowole)",0.75,MW08_0008,"Water, (Madzi)",68
+MW01_0014,Doughnuts (Mandasi),1.02,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",42
+MW01_0014,Doughnuts (Mandasi),1.02,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",41
+MW01_0014,Doughnuts (Mandasi),1.02,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",8
+MW01_0014,Doughnuts (Mandasi),1.02,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",8
+MW01_0015,"Dumplings, (Dampuling'i)",0.96,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",35
+MW01_0015,"Dumplings, (Dampuling'i)",0.96,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",27
+MW01_0015,"Dumplings, (Dampuling'i)",0.96,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",20
+MW01_0015,"Dumplings, (Dampuling'i)",0.96,MW01_0043,"Oats, raw, (Maotsi)",11
+MW01_0015,"Dumplings, (Dampuling'i)",0.96,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",7
+MW01_0025,"French fries/chips, (Chipisi)",0.6,MW01_0050,"Potato, local variety, raw, (Mbatata ya kachewere)",86
+MW01_0025,"French fries/chips, (Chipisi)",0.6,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",14
+MW01_0028,"Maize and soya thick porridge, (Nsima ya ufa wa chimanga ndi soya)",0.75,MW08_0008,"Water, (Madzi)",82
+MW01_0028,"Maize and soya thick porridge, (Nsima ya ufa wa chimanga ndi soya)",0.75,MW01_0018,"Flour, maize, white, degermed-dehulled, unfortified, raw, (Ufa wa galamilu)",14
+MW01_0028,"Maize and soya thick porridge, (Nsima ya ufa wa chimanga ndi soya)",0.75,MW02_0009,"Flour, boiled soybean, (Ufa wa soya)",4
+MW01_0029,"Maize flour snack, fried, (Kadyaubwerere/Mbajira)",0.89,MW08_0008,"Water, (Madzi)",65
+MW01_0029,"Maize flour snack, fried, (Kadyaubwerere/Mbajira)",0.89,MW01_0019,"Flour, maize, white, whole, unfortified, raw, (Ufa wa mgaiwa)",34
+MW01_0029,"Maize flour snack, fried, (Kadyaubwerere/Mbajira)",0.89,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",2
+MW01_0030,"Maize soft porridge, whole flour, with groundnut flour (Phala la mgaiwa lothila nsinjilo)",0.98,MW08_0008,"Water, (Madzi)",69
+MW01_0030,"Maize soft porridge, whole flour, with groundnut flour (Phala la mgaiwa lothila nsinjilo)",0.98,MW01_0019,"Flour, maize, white, whole, unfortified, raw, (Ufa wa mgaiwa)",14
+MW01_0030,"Maize soft porridge, whole flour, with groundnut flour (Phala la mgaiwa lothila nsinjilo)",0.98,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",14
+MW01_0030,"Maize soft porridge, whole flour, with groundnut flour (Phala la mgaiwa lothila nsinjilo)",0.98,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",4
+MW01_0031,"Maize thick porridge, degermed-dehulled flour, (Nsima ya galamilu)",0.75,MW08_0008,"Water, (Madzi)",85
+MW01_0031,"Maize thick porridge, degermed-dehulled flour, (Nsima ya galamilu)",0.75,MW01_0018,"Flour, maize, white, degermed-dehulled, unfortified, raw, (Ufa wa galamilu)",15
+MW01_0032,"Maize thick porridge, refined flour, (Nsima ya ufa oyera)",0.75,MW08_0008,"Water, (Madzi)",83
+MW01_0032,"Maize thick porridge, refined flour, (Nsima ya ufa oyera)",0.75,MW01_0020,"Flour, maize, white, degermed-dehulled, fermented, unfortified, raw, (Ufa woyera)",17
+MW01_0034,"Maize thick porridge, white, whole flour, (Nsima ya mgaiwa), Calculated",0.75,MW08_0008,"Water, (Madzi)",83
+MW01_0034,"Maize thick porridge, white, whole flour, (Nsima ya mgaiwa), Calculated",0.75,MW01_0019,"Flour, maize, white, whole, unfortified, raw, (Ufa wa mgaiwa)",17
+MW01_0041,"Milk scones, (Sikono ya mkaka)",0.89,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",46
+MW01_0041,"Milk scones, (Sikono ya mkaka)",0.89,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",29
+MW01_0041,"Milk scones, (Sikono ya mkaka)",0.89,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",12
+MW01_0041,"Milk scones, (Sikono ya mkaka)",0.89,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",12
+MW01_0044,"Pancakes, wheat flour and maize flour, (Mandasi a ufa wachimanga ndi tiligu)",0.89,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",42
+MW01_0044,"Pancakes, wheat flour and maize flour, (Mandasi a ufa wachimanga ndi tiligu)",0.89,MW08_0008,"Water, (Madzi)",25
+MW01_0044,"Pancakes, wheat flour and maize flour, (Mandasi a ufa wachimanga ndi tiligu)",0.89,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",15
+MW01_0044,"Pancakes, wheat flour and maize flour, (Mandasi a ufa wachimanga ndi tiligu)",0.89,MW01_0018,"Flour, maize, white, degermed-dehulled, unfortified, raw, (Ufa wa galamilu)",8
+MW01_0044,"Pancakes, wheat flour and maize flour, (Mandasi a ufa wachimanga ndi tiligu)",0.89,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",8
+MW01_0044,"Pancakes, wheat flour and maize flour, (Mandasi a ufa wachimanga ndi tiligu)",0.89,MW06_0001,"Margarine, Rama, brick",1
+MW01_0045,"Plantain and bean casserole, (Mbalagha za nyemba)",0.98,MW01_0048,"Plantain, green, boiled, Musa paradisiaca, (Matochi)",46
+MW01_0045,"Plantain and bean casserole, (Mbalagha za nyemba)",0.98,MW02_0005,"Beans, boiled, (Nyemba zowilitsa)",31
+MW01_0045,"Plantain and bean casserole, (Mbalagha za nyemba)",0.98,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",12
+MW01_0045,"Plantain and bean casserole, (Mbalagha za nyemba)",0.98,MW04_0031,"Onion, raw, (Anyezi)",10
+MW01_0045,"Plantain and bean casserole, (Mbalagha za nyemba)",0.98,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",2
+MW01_0046,"Plantain and beef casserole, (Mbalagha za nyama ya ng'ombe)",0.87,MW01_0048,"Plantain, green, boiled, Musa paradisiaca, (Matochi)",43
+MW01_0046,"Plantain and beef casserole, (Mbalagha za nyama ya ng'ombe)",0.87,MW04_0031,"Onion, raw, (Anyezi)",4
+MW01_0046,"Plantain and beef casserole, (Mbalagha za nyama ya ng'ombe)",0.87,MW03_0006,"Beef, raw, (Nyama ya ng'ombe)",20
+MW01_0046,"Plantain and beef casserole, (Mbalagha za nyama ya ng'ombe)",0.87,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",21
+MW01_0046,"Plantain and beef casserole, (Mbalagha za nyama ya ng'ombe)",0.87,MW08_0008,"Water, (Madzi)",11
+MW01_0046,"Plantain and beef casserole, (Mbalagha za nyama ya ng'ombe)",0.87,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",1
+MW01_0047,"Plantain and fish casserole, (Mbalagha za usipa)",0.98,MW01_0048,"Plantain, green, boiled, Musa paradisiaca, (Matochi)",61
+MW01_0047,"Plantain and fish casserole, (Mbalagha za usipa)",0.98,MW03_0027,"Fish, lake sardine, whole, dried, Engraulicypris breianalis, (Usipa wowuma)",16
+MW01_0047,"Plantain and fish casserole, (Mbalagha za usipa)",0.98,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",10
+MW01_0047,"Plantain and fish casserole, (Mbalagha za usipa)",0.98,MW08_0008,"Water, (Madzi)",10
+MW01_0047,"Plantain and fish casserole, (Mbalagha za usipa)",0.98,MW04_0031,"Onion, raw, (Anyezi)",3
+MW01_0049,Potato pie,1.0,MW01_0050,"Potato, local variety, raw, (Mbatata ya kachewere)",52
+MW01_0049,Potato pie,1.0,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",24
+MW01_0049,Potato pie,1.0,MW06_0001,"Margarine, Rama, brick",9
+MW01_0049,Potato pie,1.0,MW04_0031,"Onion, raw, (Anyezi)",9
+MW01_0049,Potato pie,1.0,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",6
+MW01_0051,"Pumpkin fritters, (Mandasi a maungu)",0.89,MW04_0034,"Pumpkin, boiled, Cucurbita maxima, (Dzungu lowiritsa)",76
+MW01_0051,"Pumpkin fritters, (Mandasi a maungu)",0.89,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",11
+MW01_0051,"Pumpkin fritters, (Mandasi a maungu)",0.89,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",5
+MW01_0051,"Pumpkin fritters, (Mandasi a maungu)",0.89,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",4
+MW01_0051,"Pumpkin fritters, (Mandasi a maungu)",0.89,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",3
+MW01_0052,"Rice porridge, (Phala la mpunga)",2.0,MW08_0008,"Water, (Madzi)",69
+MW01_0052,"Rice porridge, (Phala la mpunga)",2.0,MW01_0058,"Rice, white, raw, Oryza sativa, (Mpunga woyera)",21
+MW01_0052,"Rice porridge, (Phala la mpunga)",2.0,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",9
+MW01_0052,"Rice porridge, (Phala la mpunga)",2.0,MW06_0001,"Margarine, Rama, brick",1
+MW01_0053,Rice pudding,2.0,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",91
+MW01_0053,Rice pudding,2.0,MW01_0058,"Rice, white, raw, Oryza sativa, (Mpunga woyera)",4
+MW01_0053,Rice pudding,2.0,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",3
+MW01_0053,Rice pudding,2.0,MW06_0001,"Margarine, Rama, brick",2
+MW01_0054,Rice pudding with eggs,0.91,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",64
+MW01_0054,Rice pudding with eggs,0.91,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",26
+MW01_0054,Rice pudding with eggs,0.91,MW01_0058,"Rice, white, raw, Oryza sativa, (Mpunga woyera)",6
+MW01_0054,Rice pudding with eggs,0.91,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",4
+MW01_0056,"Rice, soaked, (Mpunga woviika)",2.0,MW01_0058,"Rice, white, raw, Oryza sativa, (Mpunga woyera)",43
+MW01_0056,"Rice, soaked, (Mpunga woviika)",2.0,MW08_0008,"Water, (Madzi)",55
+MW01_0056,"Rice, soaked, (Mpunga woviika)",2.0,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",3
+MW01_0057,"Rice, white, cooked, (Mpunga woyera wophika)",2.0,MW08_0008,"Water, (Madzi)",66
+MW01_0057,"Rice, white, cooked, (Mpunga woyera wophika)",2.0,MW01_0058,"Rice, white, raw, Oryza sativa, (Mpunga woyera)",34
+MW01_0059,"Samoosa, dough, raw",1.0,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",59
+MW01_0059,"Samoosa, dough, raw",1.0,MW08_0008,"Water, (Madzi)",29
+MW01_0059,"Samoosa, dough, raw",1.0,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",12
+MW01_0061,"Steamed maize & banana snack, (Mkate)",0.96,MW05_0004,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",64
+MW01_0061,"Steamed maize & banana snack, (Mkate)",0.96,MW01_0018,"Flour, maize, white, degermed-dehulled, unfortified, raw, (Ufa wa galamilu)",21
+MW01_0061,"Steamed maize & banana snack, (Mkate)",0.96,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",10
+MW01_0061,"Steamed maize & banana snack, (Mkate)",0.96,MW05_0014,"Lemon, raw, peeled, (Ndimu losenda)",4
+MW01_0062,"Sweet potato fritters, (Zitumbuwa za mbatata)",0.89,MW01_0063,"Sweet potato, orange fleshed, raw, (Mbatata yofiila mkati)",62
+MW01_0062,"Sweet potato fritters, (Zitumbuwa za mbatata)",0.89,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",22
+MW01_0062,"Sweet potato fritters, (Zitumbuwa za mbatata)",0.89,MW06_0001,"Margarine, Rama, brick",10
+MW01_0062,"Sweet potato fritters, (Zitumbuwa za mbatata)",0.89,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",7
+MW01_0064,"Sweet potato, orange fleshed, with milk, (Mbatata yofiila mkati yothira mkaka)",1.0,MW08_0008,"Water, (Madzi)",39
+MW01_0064,"Sweet potato, orange fleshed, with milk, (Mbatata yofiila mkati yothira mkaka)",1.0,MW01_0063,"Sweet potato, orange fleshed, raw, (Mbatata yofiila mkati)",39
+MW01_0064,"Sweet potato, orange fleshed, with milk, (Mbatata yofiila mkati yothira mkaka)",1.0,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",20
+MW01_0064,"Sweet potato, orange fleshed, with milk, (Mbatata yofiila mkati yothira mkaka)",1.0,MW02_0016,"Peanut butter, smooth style, with salt",2
+MW01_0067,"Sweet potatoes, boiled, with groundnut flour, (Futali wa mbatata yakholowa)",1.0,MW01_0063,"Sweet potato, orange fleshed, raw, (Mbatata yofiila mkati)",64
+MW01_0067,"Sweet potatoes, boiled, with groundnut flour, (Futali wa mbatata yakholowa)",1.0,MW08_0008,"Water, (Madzi)",28
+MW01_0067,"Sweet potatoes, boiled, with groundnut flour, (Futali wa mbatata yakholowa)",1.0,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",7
+MW02_0001,"Bean and groundnut stew, (Ndawva)",2.03,MW08_0008,"Water, (Madzi)",63
+MW02_0001,"Bean and groundnut stew, (Ndawva)",2.03,MW02_0004,"Bean, kidney, dry, Phaseolus vulgaris, (Nyemba zouma)",13
+MW02_0001,"Bean and groundnut stew, (Ndawva)",2.03,MW02_0014,"Groundnut, dry, Arachis hypogae, (Mtedza wouma)",10
+MW02_0001,"Bean and groundnut stew, (Ndawva)",2.03,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",10
+MW02_0001,"Bean and groundnut stew, (Ndawva)",2.03,MW04_0031,"Onion, raw, (Anyezi)",4
+MW02_0002,"Bean soup, (Supu wa nyemba)",2.03,MW08_0008,"Water, (Madzi)",57
+MW02_0002,"Bean soup, (Supu wa nyemba)",2.03,MW02_0004,"Bean, kidney, dry, Phaseolus vulgaris, (Nyemba zouma)",24
+MW02_0002,"Bean soup, (Supu wa nyemba)",2.03,MW04_0031,"Onion, raw, (Anyezi)",7
+MW02_0002,"Bean soup, (Supu wa nyemba)",2.03,MW04_0009,"Green pepper, raw, (Gilini pepa)",7
+MW02_0002,"Bean soup, (Supu wa nyemba)",2.03,MW04_0005,"Carrot, with skin, raw, (Kaloti)",6
+MW02_0003,"Bean stew, (Nyemba zouma zokazingira)",2.03,MW08_0008,"Water, (Madzi)",57
+MW02_0003,"Bean stew, (Nyemba zouma zokazingira)",2.03,MW02_0004,"Bean, kidney, dry, Phaseolus vulgaris, (Nyemba zouma)",24
+MW02_0003,"Bean stew, (Nyemba zouma zokazingira)",2.03,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",14
+MW02_0003,"Bean stew, (Nyemba zouma zokazingira)",2.03,MW04_0031,"Onion, raw, (Anyezi)",3
+MW02_0003,"Bean stew, (Nyemba zouma zokazingira)",2.03,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",1
+MW02_0005,"Beans, boiled, (Nyemba zowilitsa)",2.5,MW08_0008,"Water, (Madzi)",83
+MW02_0005,"Beans, boiled, (Nyemba zowilitsa)",2.5,MW02_0004,"Bean, kidney, dry, Phaseolus vulgaris, (Nyemba zouma)",17
+MW02_0006,"Cowpea relish, (Khobwe wowilitsa ndi tomato)",2.0,MW08_0008,"Water, (Madzi)",63
+MW02_0006,"Cowpea relish, (Khobwe wowilitsa ndi tomato)",2.0,MW02_0007,"Cowpea, dry, Vigna unguiculata, (Khobwe/Nseula wouma)",17
+MW02_0006,"Cowpea relish, (Khobwe wowilitsa ndi tomato)",2.0,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",15
+MW02_0006,"Cowpea relish, (Khobwe wowilitsa ndi tomato)",2.0,MW04_0031,"Onion, raw, (Anyezi)",3
+MW02_0006,"Cowpea relish, (Khobwe wowilitsa ndi tomato)",2.0,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",2
+MW02_0013,"Groundnut sauce, (Thendo)",0.99,MW08_0008,"Water, (Madzi)",50
+MW02_0013,"Groundnut sauce, (Thendo)",0.99,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",30
+MW02_0013,"Groundnut sauce, (Thendo)",0.99,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",15
+MW02_0013,"Groundnut sauce, (Thendo)",0.99,MW04_0031,"Onion, raw, (Anyezi)",5
+MW03_0001,"Beef mince, fried, (Nyama ya ng'ombe yogaya yokazinga)",0.87,MW03_0006,"Beef, raw, (Nyama ya ng'ombe)",66
+MW03_0001,"Beef mince, fried, (Nyama ya ng'ombe yogaya yokazinga)",0.87,MW04_0031,"Onion, raw, (Anyezi)",27
+MW03_0001,"Beef mince, fried, (Nyama ya ng'ombe yogaya yokazinga)",0.87,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",7
+MW03_0002,"Beef stew, (Nyama ya ng'ombe yokazingira)",0.6,MW03_0006,"Beef, raw, (Nyama ya ng'ombe)",80
+MW03_0002,"Beef stew, (Nyama ya ng'ombe yokazingira)",0.6,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",48
+MW03_0002,"Beef stew, (Nyama ya ng'ombe yokazingira)",0.6,MW08_0008,"Water, (Madzi)",25
+MW03_0002,"Beef stew, (Nyama ya ng'ombe yokazingira)",0.6,MW04_0031,"Onion, raw, (Anyezi)",14
+MW03_0005,"Beef, liver, stew, (chiwindi cha ng'ombe chokazingira)",0.82,MW03_0004,"Beef, liver, raw, (Chiwindi cha ng'ombe)",34
+MW03_0005,"Beef, liver, stew, (chiwindi cha ng'ombe chokazingira)",0.82,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",32
+MW03_0005,"Beef, liver, stew, (chiwindi cha ng'ombe chokazingira)",0.82,MW04_0031,"Onion, raw, (Anyezi)",19
+MW03_0005,"Beef, liver, stew, (chiwindi cha ng'ombe chokazingira)",0.82,MW04_0009,"Green pepper, raw, (Gilini pepa)",12
+MW03_0005,"Beef, liver, stew, (chiwindi cha ng'ombe chokazingira)",0.82,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",3
+MW03_0010,"Chicken stew, (Nkhuku yokazingira)",0.7,MW03_0011,"Chicken, meat with skin, free range, local, raw, (Nkhuku ya chikuda)",48
+MW03_0010,"Chicken stew, (Nkhuku yokazingira)",0.7,MW08_0008,"Water, (Madzi)",20
+MW03_0010,"Chicken stew, (Nkhuku yokazingira)",0.7,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",15
+MW03_0010,"Chicken stew, (Nkhuku yokazingira)",0.7,MW04_0009,"Green pepper, raw, (Gilini pepa)",7
+MW03_0010,"Chicken stew, (Nkhuku yokazingira)",0.7,MW04_0031,"Onion, raw, (Anyezi)",5
+MW03_0010,"Chicken stew, (Nkhuku yokazingira)",0.7,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",4
+MW03_0013,"Egg, chicken, boiled, (Dzira lankhuku lowilitsa)",0.9,MW08_0008,"Water, (Madzi)",83
+MW03_0013,"Egg, chicken, boiled, (Dzira lankhuku lowilitsa)",0.9,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",17
+MW03_0014,"Egg, chicken, scrambled, (Dzira la nkhuku lokanya)",0.91,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",68
+MW03_0014,"Egg, chicken, scrambled, (Dzira la nkhuku lokanya)",0.91,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",19
+MW03_0014,"Egg, chicken, scrambled, (Dzira la nkhuku lokanya)",0.91,MW06_0001,"Margarine, Rama, brick",14
+MW03_0017,"Eggs, chicken, boiled, with peas, (Mazira ankhuku owilitsa ndi nsawawa)",1.03,MW04_0032,"Peas, raw, Pisum sativum, (Nsawawa zaziwisi)",19
+MW03_0017,"Eggs, chicken, boiled, with peas, (Mazira ankhuku owilitsa ndi nsawawa)",1.03,MW03_0013,"Egg, chicken, boiled, (Dzira lankhuku lowilitsa)",15
+MW03_0017,"Eggs, chicken, boiled, with peas, (Mazira ankhuku owilitsa ndi nsawawa)",1.03,MW04_0031,"Onion, raw, (Anyezi)",8
+MW03_0017,"Eggs, chicken, boiled, with peas, (Mazira ankhuku owilitsa ndi nsawawa)",1.03,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",3
+MW03_0017,"Eggs, chicken, boiled, with peas, (Mazira ankhuku owilitsa ndi nsawawa)",1.03,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",27
+MW03_0017,"Eggs, chicken, boiled, with peas, (Mazira ankhuku owilitsa ndi nsawawa)",1.03,MW01_0020,"Flour, maize, white, degermed-dehulled, fermented, unfortified, raw, (Ufa woyera)",2
+MW03_0018,"Eggs, chicken, boiled, with tomatoes, (Mazira ankhuku owilitsa othila tomato)",0.87,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",48
+MW03_0018,"Eggs, chicken, boiled, with tomatoes, (Mazira ankhuku owilitsa othila tomato)",0.87,MW03_0013,"Egg, chicken, boiled, (Dzira lankhuku lowilitsa)",30
+MW03_0018,"Eggs, chicken, boiled, with tomatoes, (Mazira ankhuku owilitsa othila tomato)",0.87,MW04_0031,"Onion, raw, (Anyezi)",14
+MW03_0018,"Eggs, chicken, boiled, with tomatoes, (Mazira ankhuku owilitsa othila tomato)",0.87,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",5
+MW03_0018,"Eggs, chicken, boiled, with tomatoes, (Mazira ankhuku owilitsa othila tomato)",0.87,MW01_0018,"Flour, maize, white, degermed-dehulled, unfortified, raw, (Ufa wa galamilu)",3
+MW03_0019,"Fish powder stew, (Supu ya ufa wansomba)",0.76,MW08_0008,"Water, (Madzi)",46
+MW03_0019,"Fish powder stew, (Supu ya ufa wansomba)",0.76,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",44
+MW03_0019,"Fish powder stew, (Supu ya ufa wansomba)",0.76,MW04_0031,"Onion, raw, (Anyezi)",6
+MW03_0019,"Fish powder stew, (Supu ya ufa wansomba)",0.76,MW03_0028,"Fish, powder, Engraulicypris sardella, (Ufa wausipa)",2
+MW03_0019,"Fish powder stew, (Supu ya ufa wansomba)",0.76,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",2
+MW03_0021,"Fish, catfish, fresh, fried, (Mlamba wokazinga)",0.8,MW03_0022,"Fish, catfish, raw, Synodontis, (Nkholokolo)",64
+MW03_0021,"Fish, catfish, fresh, fried, (Mlamba wokazinga)",0.8,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",25
+MW03_0021,"Fish, catfish, fresh, fried, (Mlamba wokazinga)",0.8,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",8
+MW03_0021,"Fish, catfish, fresh, fried, (Mlamba wokazinga)",0.8,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",3
+MW03_0029,"Fish, tilapia, fresh, fried, (Chambo chokazinga)",0.8,MW03_0036,"Fish, whole, fresh, Oreochromis lidole, (Chambo cha fuleshi)",81
+MW03_0029,"Fish, tilapia, fresh, fried, (Chambo chokazinga)",0.8,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",13
+MW03_0029,"Fish, tilapia, fresh, fried, (Chambo chokazinga)",0.8,MW05_0014,"Lemon, raw, peeled, (Ndimu losenda)",2
+MW03_0029,"Fish, tilapia, fresh, fried, (Chambo chokazinga)",0.8,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",8
+MW03_0030,"Fish, tilapia, fresh, grilled, (Chambo chootcha)",0.89,MW03_0036,"Fish, whole, fresh, Oreochromis lidole, (Chambo cha fuleshi)",94
+MW03_0030,"Fish, tilapia, fresh, grilled, (Chambo chootcha)",0.89,MW06_0001,"Margarine, Rama, brick",6
+MW03_0053,"Lake flies stew, (Nkhungu zotendera)",1.2,MW02_0014,"Groundnut, dry, Arachis hypogae, (Mtedza wouma)",33
+MW03_0053,"Lake flies stew, (Nkhungu zotendera)",1.2,MW03_0054,"Lake flies, dry, roasted, Chaoborus edulis, (Nkhungu zokazinga)",27
+MW03_0053,"Lake flies stew, (Nkhungu zotendera)",1.2,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",25
+MW03_0053,"Lake flies stew, (Nkhungu zotendera)",1.2,MW04_0031,"Onion, raw, (Anyezi)",6
+MW03_0053,"Lake flies stew, (Nkhungu zotendera)",1.2,MW08_0008,"Water, (Madzi)",6
+MW03_0053,"Lake flies stew, (Nkhungu zotendera)",1.2,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",2
+MW03_0055,"Lake sardine stew, with groundnut flour, (Usipa wotendera)",0.98,MW03_0027,"Fish, lake sardine, whole, dried, Engraulicypris breianalis, (Usipa wowuma)",40
+MW03_0055,"Lake sardine stew, with groundnut flour, (Usipa wotendera)",0.98,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",25
+MW03_0055,"Lake sardine stew, with groundnut flour, (Usipa wotendera)",0.98,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",14
+MW03_0055,"Lake sardine stew, with groundnut flour, (Usipa wotendera)",0.98,MW04_0031,"Onion, raw, (Anyezi)",7
+MW03_0055,"Lake sardine stew, with groundnut flour, (Usipa wotendera)",0.98,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",1
+MW03_0056,"Lamb, meat, roast, (Nyama ya nkhosa yootcha)",0.71,MW03_0063,"Mutton, meat, ~20% fat, raw, (Nyama ya Nkhosa)",100
+MW03_0061,"Milkshake, banana",1.0,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",71
+MW03_0061,"Milkshake, banana",1.0,MW05_0004,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",28
+MW03_0061,"Milkshake, banana",1.0,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",1
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW08_0008,"Water, (Madzi)",31
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW03_0063,"Mutton, meat, ~20% fat, raw, (Nyama ya Nkhosa)",22
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",15
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW01_0050,"Potato, local variety, raw, (Mbatata ya kachewere)",12
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW04_0031,"Onion, raw, (Anyezi)",9
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW04_0005,"Carrot, with skin, raw, (Kaloti)",7
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",2
+MW03_0062,"Mutton stew, (Nyama ya nkhosa yokazingira)",0.76,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",1
+MW03_0066,"Rabbit stew, (Nyama ya kalulu yokazingira)",0.68,MW03_0067,"Rabbit, meat, raw, Oryctolagus cuniculus, (Nyama ya kalulu)",74
+MW03_0066,"Rabbit stew, (Nyama ya kalulu yokazingira)",0.68,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",19
+MW03_0066,"Rabbit stew, (Nyama ya kalulu yokazingira)",0.68,MW04_0031,"Onion, raw, (Anyezi)",5
+MW03_0066,"Rabbit stew, (Nyama ya kalulu yokazingira)",0.68,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",1
+MW03_0066,"Rabbit stew, (Nyama ya kalulu yokazingira)",0.68,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",1
+MW03_0068,"Samoosa, beef filling, fried, (Samusa wa nyama ya ng'ombe wokazinga)",0.74,MW01_0059,"Samoosa, dough, raw",25
+MW03_0068,"Samoosa, beef filling, fried, (Samusa wa nyama ya ng'ombe wokazinga)",0.74,MW03_0001,"Beef mince, fried, (Nyama ya ng'ombe yogaya yokazinga)",73
+MW03_0068,"Samoosa, beef filling, fried, (Samusa wa nyama ya ng'ombe wokazinga)",0.74,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",1
+MW04_0002,"Black jack leaves stew, with groundnut flour, (Chisoso chotendela)",0.94,MW04_0012,"Leaves, black jack, raw, (Chisoso)",34
+MW04_0002,"Black jack leaves stew, with groundnut flour, (Chisoso chotendela)",0.94,MW08_0008,"Water, (Madzi)",27
+MW04_0002,"Black jack leaves stew, with groundnut flour, (Chisoso chotendela)",0.94,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",17
+MW04_0002,"Black jack leaves stew, with groundnut flour, (Chisoso chotendela)",0.94,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",14
+MW04_0002,"Black jack leaves stew, with groundnut flour, (Chisoso chotendela)",0.94,MW04_0031,"Onion, raw, (Anyezi)",8
+MW04_0006,"Eggplant fritters, (Mabilinganya okazinga)",0.89,MW04_0007,"Eggplant, raw, (Mabilinganya)",67
+MW04_0006,"Eggplant fritters, (Mabilinganya okazinga)",0.89,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",16
+MW04_0006,"Eggplant fritters, (Mabilinganya okazinga)",0.89,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",8
+MW04_0006,"Eggplant fritters, (Mabilinganya okazinga)",0.89,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",6
+MW04_0006,"Eggplant fritters, (Mabilinganya okazinga)",0.89,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",2
+MW04_0022,"Mushroom stew, with groundnut flour, (Bowa wotendera)",0.82,MW04_0025,"Mushroom, oyster, cultivated, raw, Pleurotus florida, (Bowa wolimidwa)",48
+MW04_0022,"Mushroom stew, with groundnut flour, (Bowa wotendera)",0.82,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",21
+MW04_0022,"Mushroom stew, with groundnut flour, (Bowa wotendera)",0.82,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",12
+MW04_0022,"Mushroom stew, with groundnut flour, (Bowa wotendera)",0.82,MW08_0008,"Water, (Madzi)",11
+MW04_0022,"Mushroom stew, with groundnut flour, (Bowa wotendera)",0.82,MW04_0031,"Onion, raw, (Anyezi)",8
+MW04_0026,"Mushroom, relish, (Bowa okazingila)",0.82,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",45
+MW04_0026,"Mushroom, relish, (Bowa okazingila)",0.82,MW04_0025,"Mushroom, oyster, cultivated, raw, Pleurotus florida, (Bowa wolimidwa)",34
+MW04_0026,"Mushroom, relish, (Bowa okazingila)",0.82,MW04_0031,"Onion, raw, (Anyezi)",17
+MW04_0026,"Mushroom, relish, (Bowa okazingila)",0.82,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",4
+MW04_0028,"Okra relish, (Thelele lobala lokazingira)",0.93,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",50
+MW04_0028,"Okra relish, (Thelele lobala lokazingira)",0.93,MW04_0030,"Okra, raw, Abelmoschus esculentus, (Therere lobala)",31
+MW04_0028,"Okra relish, (Thelele lobala lokazingira)",0.93,MW04_0031,"Onion, raw, (Anyezi)",14
+MW04_0028,"Okra relish, (Thelele lobala lokazingira)",0.93,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",5
+MW04_0029,"Okra stew, (Thelele lobala lokupa)",0.76,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",29
+MW04_0029,"Okra stew, (Thelele lobala lokupa)",0.76,MW04_0019,"Leaves, pumpkin, raw, (Nkhwani)",26
+MW04_0029,"Okra stew, (Thelele lobala lokupa)",0.76,MW04_0030,"Okra, raw, Abelmoschus esculentus, (Therere lobala)",24
+MW04_0029,"Okra stew, (Thelele lobala lokupa)",0.76,MW08_0008,"Water, (Madzi)",20
+MW04_0033,"Pumpkin leaves stew, (Nkhwani wokazingira)",0.98,MW04_0019,"Leaves, pumpkin, raw, (Nkhwani)",48
+MW04_0033,"Pumpkin leaves stew, (Nkhwani wokazingira)",0.98,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",32
+MW04_0033,"Pumpkin leaves stew, (Nkhwani wokazingira)",0.98,MW08_0008,"Water, (Madzi)",12
+MW04_0033,"Pumpkin leaves stew, (Nkhwani wokazingira)",0.98,MW04_0031,"Onion, raw, (Anyezi)",6
+MW04_0033,"Pumpkin leaves stew, (Nkhwani wokazingira)",0.98,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",2
+MW04_0035,"Tomato soup, (Supu wa tomato)",0.71,MW04_0036,"Tomato, ripe, raw, (Tomato okupsya)",89
+MW04_0035,"Tomato soup, (Supu wa tomato)",0.71,MW06_0001,"Margarine, Rama, brick",6
+MW04_0035,"Tomato soup, (Supu wa tomato)",0.71,MW04_0031,"Onion, raw, (Anyezi)",4
+MW04_0035,"Tomato soup, (Supu wa tomato)",0.71,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",2
+MW05_0003,"Banana, fried, (Nthochi yokazinga)",1.0,MW05_0004,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",78
+MW05_0003,"Banana, fried, (Nthochi yokazinga)",1.0,MW01_0024,"Flour, wheat, white, unfortified, raw, (Ufa wa tirigu)",13
+MW05_0003,"Banana, fried, (Nthochi yokazinga)",1.0,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",9
+MW05_0007,"Fruit salad, fresh, (mango, banana, pineapple & pawpaw)",1.0,MW05_0016,"Mango, ripe, (Mango)",46
+MW05_0007,"Fruit salad, fresh, (mango, banana, pineapple & pawpaw)",1.0,MW05_0004,"Banana, white fleshed, raw, peeled, Musa paradisiaca, (Nthochi yoyela mkati yokupsya)",38
+MW05_0007,"Fruit salad, fresh, (mango, banana, pineapple & pawpaw)",1.0,MW05_0021,"Pineapple, raw, peeled, Ananas comosus, (Nanazi losenda)",9
+MW05_0007,"Fruit salad, fresh, (mango, banana, pineapple & pawpaw)",1.0,MW05_0019,"Pawpaw, fresh, (Papaya)",7
+MW05_0010,"Juice tamarind, homemade, (Juwisi wa bwemba)",0.8,MW08_0008,"Water, (Madzi)",75
+MW05_0010,"Juice tamarind, homemade, (Juwisi wa bwemba)",0.8,MW05_0024,"Tamarind, fruit, raw, Tamarindus indica, (Bwemba)",21
+MW05_0010,"Juice tamarind, homemade, (Juwisi wa bwemba)",0.8,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",4
+MW05_0011,"Juice, baobab, homemade, (Juwisi wamalambe)",0.98,MW08_0008,"Water, (Madzi)",84
+MW05_0011,"Juice, baobab, homemade, (Juwisi wamalambe)",0.98,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",10
+MW05_0011,"Juice, baobab, homemade, (Juwisi wamalambe)",0.98,MW05_0005,"Baobab, raw, Adansonia digitata, (Malambe)",6
+MW05_0012,"Juice, orange, homemade, (Juwisi wa malalanje)",0.8,MW05_0018,"Orange, raw, peeled, Citrus sinensis, (Lalanje losenda)",43
+MW05_0012,"Juice, orange, homemade, (Juwisi wa malalanje)",0.8,MW08_0006,"Sugar, white, fortified, (Shuga woyera)",12
+MW05_0012,"Juice, orange, homemade, (Juwisi wa malalanje)",0.8,MW05_0014,"Lemon, raw, peeled, (Ndimu losenda)",1
+MW05_0012,"Juice, orange, homemade, (Juwisi wa malalanje)",0.8,MW08_0008,"Water, (Madzi)",45
+MW07_0083,"Maize soft porridge, with egg & vegetable, (Phala lamgaiwa loika mazira ndi masamba)",0.98,MW08_0008,"Water, (Madzi)",68
+MW07_0083,"Maize soft porridge, with egg & vegetable, (Phala lamgaiwa loika mazira ndi masamba)",0.98,MW03_0015,"Egg, chicken, whole, raw, (Dzira la nkhuku)",14
+MW07_0083,"Maize soft porridge, with egg & vegetable, (Phala lamgaiwa loika mazira ndi masamba)",0.98,MW01_0019,"Flour, maize, white, whole, unfortified, raw, (Ufa wa mgaiwa)",12
+MW07_0083,"Maize soft porridge, with egg & vegetable, (Phala lamgaiwa loika mazira ndi masamba)",0.98,MW04_0011,"Leaves, amaranth, raw, (Bonongwe)",4
+MW07_0083,"Maize soft porridge, with egg & vegetable, (Phala lamgaiwa loika mazira ndi masamba)",0.98,MW06_0005,"Oil, sunflower, fortified, supermarket, (Mafuta ophikira a mpendadzuwa)",3
+MW07_0084,"Rice porridge, with carrot, milk & groundnut flour, (Phala la mpunga lothira kaloti, mkaka ndi nsinjilo)",1.0,MW08_0008,"Water, (Madzi)",67
+MW07_0084,"Rice porridge, with carrot, milk & groundnut flour, (Phala la mpunga lothira kaloti, mkaka ndi nsinjilo)",1.0,MW03_0059,"Milk, cow, whole, fresh, (Mkaka wa ng'ombe wa madzi)",7
+MW07_0084,"Rice porridge, with carrot, milk & groundnut flour, (Phala la mpunga lothira kaloti, mkaka ndi nsinjilo)",1.0,MW01_0058,"Rice, white, raw, Oryza sativa, (Mpunga woyera)",6
+MW07_0084,"Rice porridge, with carrot, milk & groundnut flour, (Phala la mpunga lothira kaloti, mkaka ndi nsinjilo)",1.0,MW02_0010,"Flour, groundnut, Arachis hypogaea, (Nsinjilo)",3
+MW07_0084,"Rice porridge, with carrot, milk & groundnut flour, (Phala la mpunga lothira kaloti, mkaka ndi nsinjilo)",1.0,MW04_0005,"Carrot, with skin, raw, (Kaloti)",16

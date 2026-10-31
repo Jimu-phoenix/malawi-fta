@@ -1,0 +1,32 @@
+food_code,name_original,issue
+MW05_0007,"Fruit salad, fresh, (mango, banana, pineapple & pawpaw)","unclear bracket 'mango, banana, pineapple & pawpaw': unusual character"
+MW07_0009,"Baby food (jar), 10 months, banana & berry with yoghurt",unclear bracket 'jar': short ambiguous token
+MW07_0010,"Baby food (jar), 10 months, summer fruit dessert",unclear bracket 'jar': short ambiguous token
+MW07_0011,"Baby food (jar), 6 months, apple",unclear bracket 'jar': short ambiguous token
+MW07_0012,"Baby food (jar), 6 months, banana",unclear bracket 'jar': short ambiguous token
+MW07_0013,"Baby food (jar), 6 months, butternut",unclear bracket 'jar': short ambiguous token
+MW07_0014,"Baby food (jar), 6 months, carrot",unclear bracket 'jar': short ambiguous token
+MW07_0015,"Baby food (jar), 6 months, guava & pear",unclear bracket 'jar': short ambiguous token
+MW07_0016,"Baby food (jar), 6 months, sweet potato",unclear bracket 'jar': short ambiguous token
+MW07_0017,"Baby food (jar), 7 months, apple",unclear bracket 'jar': short ambiguous token
+MW07_0018,"Baby food (jar), 7 months, banana",unclear bracket 'jar': short ambiguous token
+MW07_0019,"Baby food (jar), 7 months, banana & yoghurt",unclear bracket 'jar': short ambiguous token
+MW07_0020,"Baby food (jar), 7 months, butternut",unclear bracket 'jar': short ambiguous token
+MW07_0021,"Baby food (jar), 7 months, carrot",unclear bracket 'jar': short ambiguous token
+MW07_0022,"Baby food (jar), 7 months, mixed vegetables",unclear bracket 'jar': short ambiguous token
+MW07_0023,"Baby food (jar), 7 months, peach",unclear bracket 'jar': short ambiguous token
+MW07_0024,"Baby food (jar), 7 months, pear",unclear bracket 'jar': short ambiguous token
+MW07_0025,"Baby food (jar), 7 months, sweet potato",unclear bracket 'jar': short ambiguous token
+MW07_0026,"Baby food (jar), 7 months, vegetables & beef",unclear bracket 'jar': short ambiguous token
+MW07_0027,"Baby food (jar), 7 months, vegetables & chicken",unclear bracket 'jar': short ambiguous token
+MW07_0028,"Baby food (jar), 8 months, apple",unclear bracket 'jar': short ambiguous token
+MW07_0029,"Baby food (jar), 8 months, apple & banana",unclear bracket 'jar': short ambiguous token
+MW07_0030,"Baby food (jar), 8 months, fruit & yoghurt",unclear bracket 'jar': short ambiguous token
+MW07_0031,"Baby food (jar), 8 months, fruit salad",unclear bracket 'jar': short ambiguous token
+MW07_0032,"Baby food (jar), 8 months, peach",unclear bracket 'jar': short ambiguous token
+MW07_0033,"Baby food (jar), 8 months, pear",unclear bracket 'jar': short ambiguous token
+MW07_0034,"Baby food (jar), 8 months, pears with yoghurt",unclear bracket 'jar': short ambiguous token
+MW07_0035,"Baby food (jar), 8 months, vegetables & chicken",unclear bracket 'jar': short ambiguous token
+MW08_0002,"Ready-to-use therapeutic food (RUTF), milk, maize, soya, sorghum (MSMS)","multiple bracket groups: 'RUTF', 'MSMS'"
+MW08_0003,"Ready-to-use therapeutic food (RUTF), milk-free, soya, maize, sorghum (FSMS)","multiple bracket groups: 'RUTF', 'FSMS'"
+MW08_0004,"Ready-to-use therapeutic food (RUTF), peanut, milk (PM)","multiple bracket groups: 'RUTF', 'PM'"

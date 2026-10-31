@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS foods (
 CREATE TABLE IF NOT EXISTS food_aliases (
   food_id TEXT,
   alias TEXT NOT NULL,
-  language TEXT
+  language TEXT,
+  kind TEXT
 );
 
 CREATE INDEX IF NOT EXISTS idx_food_aliases_alias_lower
