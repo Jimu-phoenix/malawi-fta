@@ -1,5 +1,9 @@
 import Groq from "groq-sdk";
 import type { ChatCompletionMessageParam } from "groq-sdk/resources/chat/completions.js";
+import type {
+  ChatCompletionCreateParamsNonStreaming,
+  ChatCompletionCreateParamsStreaming,
+} from "groq-sdk/resources/chat/completions.js";
 import { config } from "../config.js";
 import { executeTool, toolDefinitions } from "../tools/index.js";
 
@@ -30,10 +34,37 @@ export type AgentTurnResult = {
 
 const groq = new Groq({ apiKey: config.groqApiKey });
 
+function nonStreamingParams(
+  messages: ChatCompletionMessageParam[],
+): ChatCompletionCreateParamsNonStreaming {
+  return {
+    model: config.groqModel,
+    messages,
+    tools: toolDefinitions,
+    tool_choice: "auto",
+    temperature: 0.2,
+    stream: false,
+  };
+}
+
+function streamingParams(
+  messages: ChatCompletionMessageParam[],
+): ChatCompletionCreateParamsStreaming {
+  return {
+    model: config.groqModel,
+    messages,
+    tools: toolDefinitions,
+    tool_choice: "auto",
+    temperature: 0.2,
+    stream: true,
+  };
+}
+
 export async function runAgentTurn(
   history: ChatCompletionMessageParam[],
   userMessage: string,
   onEvent?: (event: AgentEvent) => void,
+  onStream?: (chunk: string) => void,
 ): Promise<AgentTurnResult> {
   const hasSystemPrompt = history.some((message) => message.role === "system");
   const messages: ChatCompletionMessageParam[] = hasSystemPrompt
@@ -41,14 +72,12 @@ export async function runAgentTurn(
     : [{ role: "system", content: SYSTEM_PROMPT }, ...history];
   messages.push({ role: "user", content: userMessage });
 
+  let reply = "";
+
   for (let iteration = 1; iteration <= MAX_ITERATIONS; iteration += 1) {
-    const completion = await groq.chat.completions.create({
-      model: config.groqModel,
-      messages,
-      tools: toolDefinitions,
-      tool_choice: "auto",
-      temperature: 0.2,
-    });
+    const completion = await groq.chat.completions.create(
+      nonStreamingParams(messages),
+    );
 
     const response = completion.choices[0]?.message;
     if (response === undefined) {
@@ -57,7 +86,9 @@ export async function runAgentTurn(
 
     const toolCalls = response.tool_calls ?? [];
     if (toolCalls.length === 0) {
-      const reply = response.content?.trim() ?? "";
+      const fallback = response.content?.trim() ?? "";
+      const streamed = await streamAssistantText(messages, onStream, fallback);
+      reply = streamed || fallback;
       messages.push({ role: "assistant", content: reply });
       onEvent?.({ type: "assistant", content: reply });
       return { reply, messages };
@@ -92,4 +123,27 @@ export async function runAgentTurn(
   }
 
   throw new Error(`Agent exceeded ${MAX_ITERATIONS} tool iterations.`);
+}
+
+async function streamAssistantText(
+  messages: ChatCompletionMessageParam[],
+  onStream?: (chunk: string) => void,
+  fallback: string = "",
+): Promise<string> {
+  let collected = "";
+  try {
+    const stream = await groq.chat.completions.create(
+      streamingParams(messages),
+    );
+    for await (const chunk of stream) {
+      const delta = chunk.choices[0]?.delta?.content ?? "";
+      if (delta === "") continue;
+      collected += delta;
+      onStream?.(delta);
+    }
+  } catch {
+    // Streaming is a best-effort UI enhancement. If it fails or is not
+    // supported, fall back to the already-fetched non-streamed content.
+  }
+  return collected || fallback;
 }
