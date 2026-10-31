@@ -2,12 +2,18 @@ import type { ChatCompletionTool } from "groq-sdk/resources/chat/completions.js"
 import { z } from "zod";
 import { db } from "../db/index.js";
 import { randomUUID } from "node:crypto";
+import { getNutrient } from "../db/nutrients.js";
 
 const DEFAULT_USER_ID = "local";
 
 // Two candidates within this many ranks of the best match count as "close"
 // and make the search ambiguous when they name meaningfully different foods.
 const AMBIGUITY_RANK_MARGIN = 1;
+
+const ENERGY_KCAL = "energy_kcal";
+const PROTEIN_G = "protein_g";
+const FAT_G = "fat_g";
+const CARBOHYDRATE_G = "carbohydrate_total_g";
 
 const searchFoodSchema = z.object({
   query: z.string().trim().min(1, "query is required"),
@@ -20,7 +26,7 @@ const mealItemSchema = z.object({
   count: z.number().positive("count must be greater than 0").optional(),
 });
 
-const calculateCaloriesSchema = z.object({
+const calculateNutritionSchema = z.object({
   items: z.array(mealItemSchema).min(1, "at least one item is required"),
 });
 
@@ -52,7 +58,7 @@ const undoLastMealSchema = z.object({
 });
 
 type SearchFoodInput = z.infer<typeof searchFoodSchema>;
-type CalculateCaloriesInput = z.infer<typeof calculateCaloriesSchema>;
+type CalculateNutritionInput = z.infer<typeof calculateNutritionSchema>;
 type LogMealInput = z.infer<typeof logMealSchema>;
 type GetDailyTotalInput = z.infer<typeof getDailyTotalSchema>;
 type SetDailyGoalInput = z.infer<typeof setDailyGoalSchema>;
@@ -70,13 +76,13 @@ type CalculatedItem = {
   food_code: string;
   name_en: string | null;
   grams: number;
-  kcal_per_100g: number | null;
   kcal: number | null;
   protein_g: number | null;
   fat_g: number | null;
   carbohydrate_g: number | null;
   available: boolean;
   reason?: string;
+  unavailable_nutrients: string[];
 };
 
 type MealLogRow = {
@@ -85,7 +91,10 @@ type MealLogRow = {
   logged_at: string;
   food_id: string;
   grams: number;
-  kcal: number;
+  kcal: number | null;
+  protein_g: number | null;
+  fat_g: number | null;
+  carbohydrate_g: number | null;
 };
 
 function round(value: number, decimals = 1): number {
@@ -176,6 +185,9 @@ function searchFood(input: SearchFoodInput): unknown {
       left.rank - right.rank || left.name_en.localeCompare(right.name_en),
   );
 
+  // A search is ambiguous when there is no exact match and at least one other
+  // close candidate (within AMBIGUITY_RANK_MARGIN of the best rank) names a
+  // different food, so the model should not guess which one the user meant.
   let ambiguous = false;
   if (sorted.length >= 2 && sorted[0]!.rank > 0) {
     const bestRank = sorted[0]!.rank;
@@ -218,6 +230,14 @@ const getPortion = db.prepare(`
   WHERE lower(food_id) = lower(?) AND lower(measure) = lower(?)
 `);
 
+function nutrientPer100g(
+  foodCode: string,
+  component: string,
+): number | null {
+  const row = getNutrient(foodCode, component);
+  return row?.value ?? null;
+}
+
 function resolveGrams(
   foodCode: string,
   grams: number | undefined,
@@ -242,9 +262,12 @@ function resolveGrams(
   return { error: "Either grams or measure plus count is required." };
 }
 
-function calculateItems(items: CalculateCaloriesInput["items"]): {
+function calculateItems(items: CalculateNutritionInput["items"]): {
   items: CalculatedItem[];
   total_kcal: number;
+  total_protein_g: number | null;
+  total_fat_g: number | null;
+  total_carbohydrate_g: number | null;
   unavailable_count: number;
 } {
   const calculated: CalculatedItem[] = [];
@@ -261,13 +284,13 @@ function calculateItems(items: CalculateCaloriesInput["items"]): {
         food_code: item.food_code,
         name_en: null,
         grams: item.grams ?? 0,
-        kcal_per_100g: null,
         kcal: null,
         protein_g: null,
         fat_g: null,
         carbohydrate_g: null,
         available: false,
         reason: gramsResult.error,
+        unavailable_nutrients: [ENERGY_KCAL, PROTEIN_G, FAT_G, CARBOHYDRATE_G],
       });
       continue;
     }
@@ -281,65 +304,86 @@ function calculateItems(items: CalculateCaloriesInput["items"]): {
         food_code: item.food_code,
         name_en: null,
         grams: gramsResult.grams,
-        kcal_per_100g: null,
         kcal: null,
         protein_g: null,
         fat_g: null,
         carbohydrate_g: null,
         available: false,
         reason: "food not found",
+        unavailable_nutrients: [ENERGY_KCAL, PROTEIN_G, FAT_G, CARBOHYDRATE_G],
       });
       continue;
     }
 
-    if (food.kcal_per_100g === null) {
-      calculated.push({
-        food_code: food.food_code,
-        name_en: food.name_en,
-        grams: gramsResult.grams,
-        kcal_per_100g: null,
-        kcal: null,
-        protein_g: null,
-        fat_g: null,
-        carbohydrate_g: null,
-        available: false,
-        reason: "no energy value in the table",
-      });
-      continue;
-    }
+    const kcal100 = nutrientPer100g(food.food_code, ENERGY_KCAL);
+    const protein100 = nutrientPer100g(food.food_code, PROTEIN_G);
+    const fat100 = nutrientPer100g(food.food_code, FAT_G);
+    const carbs100 = nutrientPer100g(food.food_code, CARBOHYDRATE_G);
 
-    calculated.push({
+    const factor = gramsResult.grams / 100;
+    const kcal = kcal100 === null ? null : round(kcal100 * factor);
+    const protein_g = protein100 === null ? null : round(protein100 * factor);
+    const fat_g = fat100 === null ? null : round(fat100 * factor);
+    const carbohydrate_g =
+      carbs100 === null ? null : round(carbs100 * factor);
+
+    const unavailable: string[] = [];
+    if (kcal100 === null) unavailable.push(ENERGY_KCAL);
+    if (protein100 === null) unavailable.push(PROTEIN_G);
+    if (fat100 === null) unavailable.push(FAT_G);
+    if (carbs100 === null) unavailable.push(CARBOHYDRATE_G);
+
+    const baseItem: CalculatedItem = {
       food_code: food.food_code,
       name_en: food.name_en,
       grams: gramsResult.grams,
-      kcal_per_100g: food.kcal_per_100g,
-      kcal: round((food.kcal_per_100g * gramsResult.grams) / 100),
-      protein_g: null,
-      fat_g: null,
-      carbohydrate_g: null,
-      available: true,
-    });
+      kcal,
+      protein_g,
+      fat_g,
+      carbohydrate_g,
+      available: unavailable.length === 0,
+      unavailable_nutrients: unavailable,
+    };
+    if (unavailable.length > 0) {
+      baseItem.reason = `missing: ${unavailable.join(", ")}`;
+    }
+    calculated.push(baseItem);
   }
 
-  const total = calculated.reduce(
-    (sum, item) => sum + (item.available ? (item.kcal ?? 0) : 0),
+  const totalKcal = calculated.reduce(
+    (sum, item) => sum + (item.kcal ?? 0),
     0,
   );
+  const totalProtein = sumAvailable(calculated, (item) => item.protein_g);
+  const totalFat = sumAvailable(calculated, (item) => item.fat_g);
+  const totalCarbs = sumAvailable(calculated, (item) => item.carbohydrate_g);
 
   return {
     items: calculated,
-    total_kcal: round(total),
+    total_kcal: round(totalKcal),
+    total_protein_g: totalProtein,
+    total_fat_g: totalFat,
+    total_carbohydrate_g: totalCarbs,
     unavailable_count: calculated.filter((item) => !item.available).length,
   };
 }
 
-function calculateCalories(input: CalculateCaloriesInput): unknown {
+function sumAvailable(
+  items: CalculatedItem[],
+  pick: (item: CalculatedItem) => number | null,
+): number | null {
+  const values = items.map(pick).filter((value): value is number => value !== null);
+  if (values.length === 0) return null;
+  return round(values.reduce((sum, value) => sum + value, 0));
+}
+
+function calculateNutrition(input: CalculateNutritionInput): unknown {
   return calculateItems(input.items);
 }
 
 const insertMeal = db.prepare(`
-  INSERT INTO meal_log (meal_id, user_id, logged_at, food_id, grams, kcal)
-  VALUES (?, ?, ?, ?, ?, ?)
+  INSERT INTO meal_log (meal_id, user_id, logged_at, food_id, grams, kcal, protein_g, fat_g, carbohydrate_g)
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 const insertMeals = db.transaction((rows: MealLogRow[]) => {
@@ -351,6 +395,9 @@ const insertMeals = db.transaction((rows: MealLogRow[]) => {
       row.food_id,
       row.grams,
       row.kcal,
+      row.protein_g,
+      row.fat_g,
+      row.carbohydrate_g,
     );
   }
 });
@@ -362,7 +409,7 @@ function logMeal(input: LogMealInput): unknown {
   const loggedAt = new Date().toISOString();
   const available = calculated.items.filter(
     (item): item is CalculatedItem & { kcal: number } =>
-      item.available && item.kcal !== null,
+      item.kcal !== null,
   );
 
   insertMeals(
@@ -373,6 +420,9 @@ function logMeal(input: LogMealInput): unknown {
       food_id: item.food_code,
       grams: item.grams,
       kcal: item.kcal,
+      protein_g: item.protein_g,
+      fat_g: item.fat_g,
+      carbohydrate_g: item.carbohydrate_g,
     })),
   );
 
@@ -380,36 +430,75 @@ function logMeal(input: LogMealInput): unknown {
     user_id: userId,
     meal_id: mealId,
     logged_at: loggedAt,
-    items: available,
+    items: calculated.items,
     unavailable: calculated.items.filter((item) => !item.available),
-    total_kcal: round(
-      available.reduce((sum, item) => sum + item.kcal, 0),
-    ),
+    total_kcal: calculated.total_kcal,
+    total_protein_g: calculated.total_protein_g,
+    total_fat_g: calculated.total_fat_g,
+    total_carbohydrate_g: calculated.total_carbohydrate_g,
   };
 }
 
 function getDailyTotal(input: GetDailyTotalInput): unknown {
   const userId = input.user_id ?? DEFAULT_USER_ID;
   const date = input.date ?? new Date().toISOString().slice(0, 10);
-  const totals = db
+  const rows = db
     .prepare(
       `SELECT
          COALESCE(SUM(kcal), 0) AS total_kcal,
+         COALESCE(SUM(protein_g), 0) AS total_protein_g,
+         COALESCE(SUM(fat_g), 0) AS total_fat_g,
+         COALESCE(SUM(carbohydrate_g), 0) AS total_carbohydrate_g,
          COUNT(*) AS meal_count
        FROM meal_log
        WHERE user_id = ? AND substr(logged_at, 1, 10) = ?`,
     )
-    .get(userId, date) as { total_kcal: number; meal_count: number };
+    .get(userId, date) as {
+      total_kcal: number;
+      total_protein_g: number;
+      total_fat_g: number;
+      total_carbohydrate_g: number;
+      meal_count: number;
+    };
   const user = db
     .prepare(`SELECT daily_kcal_goal FROM users WHERE user_id = ?`)
     .get(userId) as { daily_kcal_goal: number | null } | undefined;
 
+  // Report which nutrients had any missing (NULL) item contribution today.
+  const missing = db
+    .prepare(
+      `SELECT
+         SUM(CASE WHEN protein_g IS NULL THEN 1 ELSE 0 END) AS missing_protein,
+         SUM(CASE WHEN fat_g IS NULL THEN 1 ELSE 0 END) AS missing_fat,
+         SUM(CASE WHEN carbohydrate_g IS NULL THEN 1 ELSE 0 END) AS missing_carbs
+       FROM meal_log
+       WHERE user_id = ? AND substr(logged_at, 1, 10) = ?`,
+    )
+    .get(userId, date) as {
+      missing_protein: number;
+      missing_fat: number;
+      missing_carbs: number;
+    };
+
+  const unavailableNotes: string[] = [];
+  if (rows.total_kcal === 0 && missing.missing_protein > 0) {
+    unavailableNotes.push("protein unavailable for some items");
+  }
+  if (missing.missing_protein > 0) unavailableNotes.push("protein");
+  if (missing.missing_fat > 0) unavailableNotes.push("fat");
+  if (missing.missing_carbs > 0) unavailableNotes.push("carbohydrate");
+
   return {
     user_id: userId,
     date,
-    total_kcal: round(totals.total_kcal),
-    meal_count: totals.meal_count,
+    total_kcal: round(rows.total_kcal),
+    total_protein_g: round(rows.total_protein_g),
+    total_fat_g: round(rows.total_fat_g),
+    total_carbohydrate_g: round(rows.total_carbohydrate_g),
+    meal_count: rows.meal_count,
     daily_goal: user?.daily_kcal_goal ?? null,
+    unavailable_nutrients:
+      unavailableNotes.length > 0 ? unavailableNotes : undefined,
   };
 }
 
@@ -435,14 +524,17 @@ function undoLastMeal(input: UndoLastMealInput): unknown {
 
   const removed = db
     .prepare(
-      `SELECT food_id, grams, kcal FROM meal_log
+      `SELECT food_id, grams, kcal, protein_g, fat_g, carbohydrate_g FROM meal_log
        WHERE user_id = ? AND meal_id = ?
        ORDER BY id`,
     )
     .all(userId, latest.meal_id) as Array<{
       food_id: string;
       grams: number;
-      kcal: number;
+      kcal: number | null;
+      protein_g: number | null;
+      fat_g: number | null;
+      carbohydrate_g: number | null;
     }>;
 
   db.prepare(`DELETE FROM meal_log WHERE user_id = ? AND meal_id = ?`).run(
@@ -513,10 +605,10 @@ export const toolDefinitions: ChatCompletionTool[] = [
   {
     type: "function",
     function: {
-      name: "search_food",
+      name: "calculate_nutrition",
       description:
-        "Search the local MAFOODS table by English name or alias. Returns up to 5 candidates each with a score (0 = exact/best match) and an ambiguous flag. When ambiguous is true, several close candidates differ meaningfully and you should ask ONE clarifying question before logging.",
-      parameters: toParameters(searchFoodSchema),
+        "Calculate calories, protein, fat and carbohydrate for foods using only database values. Accepts either grams, or a household measure plus count. Foods missing a value report it as unavailable instead of guessing.",
+      parameters: toParameters(calculateNutritionSchema),
     },
   },
   {
@@ -524,8 +616,8 @@ export const toolDefinitions: ChatCompletionTool[] = [
     function: {
       name: "calculate_calories",
       description:
-        "Calculate calories for foods and gram amounts using only database values. Accepts either grams, or a household measure plus count (resolved via get_portion_grams). Foods with no energy value are unavailable and excluded from the total.",
-      parameters: toParameters(calculateCaloriesSchema),
+        "Alias for calculate_nutrition. Kept for backward compatibility; prefer calculate_nutrition.",
+      parameters: toParameters(calculateNutritionSchema),
     },
   },
   {
@@ -533,7 +625,7 @@ export const toolDefinitions: ChatCompletionTool[] = [
     function: {
       name: "log_meal",
       description:
-        "Log foods to meal_log using database calories. Accepts either grams, or a household measure plus count. All items from one call share a meal_id and can be undone together with undo_last_meal. Log immediately; do not ask for confirmation.",
+        "Log foods to meal_log using database calories and nutrients. Accepts either grams, or a household measure plus count. All items from one call share a meal_id and can be undone together with undo_last_meal. Log immediately; do not ask for confirmation.",
       parameters: toParameters(logMealSchema),
     },
   },
@@ -542,7 +634,7 @@ export const toolDefinitions: ChatCompletionTool[] = [
     function: {
       name: "get_daily_total",
       description:
-        "Return the logged calorie total for a user and date (defaults to today), plus the daily goal if set.",
+        "Return the logged totals (kcal, protein, fat, carbohydrate) for a user and date (defaults to today), plus the daily goal if set, and any nutrients unavailable for logged items.",
       parameters: toParameters(getDailyTotalSchema),
     },
   },
@@ -589,9 +681,13 @@ export async function executeTool(
   switch (name) {
     case "search_food":
       return JSON.stringify(searchFood(parseArgs(searchFoodSchema, args)));
+    case "calculate_nutrition":
+      return JSON.stringify(
+        calculateNutrition(parseArgs(calculateNutritionSchema, args)),
+      );
     case "calculate_calories":
       return JSON.stringify(
-        calculateCalories(parseArgs(calculateCaloriesSchema, args)),
+        calculateNutrition(parseArgs(calculateNutritionSchema, args)),
       );
     case "log_meal":
       return JSON.stringify(logMeal(parseArgs(logMealSchema, args)));

@@ -100,6 +100,8 @@ db.pragma("journal_mode = WAL");
 
 for (const table of [
   "meal_log",
+  "food_values",
+  "components",
   "food_aliases",
   "portions",
   "recipes",
@@ -118,8 +120,9 @@ const sourceRefs = new Map(
 
 const insertFood = db.prepare(`
   INSERT INTO foods (
-    food_id, group_no, name_en, kcal_per_100g, kj_per_100g, energy_flag, source_ref
-  ) VALUES (?, ?, ?, ?, ?, ?, ?)
+    food_id, group_no, name_en, kcal_per_100g, kj_per_100g, energy_flag, source_ref,
+    protein_g, fat_g, carbohydrate_total_g, moisture_g
+  ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
 `);
 
 const insertFoods = db.transaction((rows: CsvRow[]) => {
@@ -134,11 +137,66 @@ const insertFoods = db.transaction((rows: CsvRow[]) => {
       numberOrNull(row["energy_kj"]),
       textOrNull(row["energy_flag"]),
       textOrNull(sourceRefs.get(foodId)),
+      numberOrNull(row["protein_g"]),
+      numberOrNull(row["fat_g"]),
+      numberOrNull(row["carbohydrate_total_g"]),
+      numberOrNull(row["moisture_g"]),
     );
   }
 });
 insertFoods(foodTable.rows);
 
+const componentRows: Array<{ component: string; label: string; unit: string; infoods_tag: string | null }> = [
+  { component: "energy_kcal", label: "Energy", unit: "kcal", infoods_tag: null },
+  { component: "energy_kj", label: "Energy", unit: "kJ", infoods_tag: null },
+  { component: "moisture_g", label: "Moisture", unit: "g", infoods_tag: null },
+  { component: "protein_g", label: "Protein", unit: "g", infoods_tag: "PROCNT" },
+  { component: "fat_g", label: "Fat, total", unit: "g", infoods_tag: "FAT" },
+  { component: "carbohydrate_total_g", label: "Carbohydrate, total", unit: "g", infoods_tag: null },
+];
+
+const insertComponent = db.prepare(`
+  INSERT INTO components (component, label, unit, infoods_tag) VALUES (?, ?, ?, ?)
+`);
+for (const component of componentRows) {
+  insertComponent.run(
+    component.component,
+    component.label,
+    component.unit,
+    component.infoods_tag,
+  );
+}
+
+const insertFoodValue = db.prepare(`
+  INSERT INTO food_values (food_code, component, value, unit, flag, raw_text)
+  VALUES (?, ?, ?, ?, ?, ?)
+`);
+
+const insertFoodValues = db.transaction((rows: CsvRow[]) => {
+  for (const row of rows) {
+    const foodId = textOrNull(row["food_code"]);
+    if (!foodId) continue;
+    const sourceRows: Array<{ component: string; value: number | null; unit: string; flag: string | null }> = [
+      { component: "energy_kcal", value: numberOrNull(row["energy_kcal"]), unit: "kcal", flag: textOrNull(row["energy_flag"]) },
+      { component: "energy_kj", value: numberOrNull(row["energy_kj"]), unit: "kJ", flag: textOrNull(row["energy_flag"]) },
+      { component: "moisture_g", value: numberOrNull(row["moisture_g"]), unit: "g", flag: null },
+      { component: "protein_g", value: numberOrNull(row["protein_g"]), unit: "g", flag: null },
+      { component: "fat_g", value: numberOrNull(row["fat_g"]), unit: "g", flag: null },
+      { component: "carbohydrate_total_g", value: numberOrNull(row["carbohydrate_total_g"]), unit: "g", flag: null },
+    ];
+    for (const sourceRow of sourceRows) {
+      insertFoodValue.run(
+        foodId,
+        sourceRow.component,
+        sourceRow.value,
+        sourceRow.unit,
+        sourceRow.flag,
+        null,
+      );
+    }
+  }
+});
+insertFoodValues(foodTable.rows);
 const aliasTable = readCsv(join(cleanDir, "food_aliases.csv"));
 const insertAlias = db.prepare(`
   INSERT INTO food_aliases (food_id, alias, language, kind) VALUES (?, ?, ?, ?)

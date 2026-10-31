@@ -244,7 +244,7 @@ function MessageRow({ message }: { message: UiMessage }): JSX.Element {
       {errorLabel !== null && <>{errorLabel}{" "}</>}
       {toolCallLabel}
       {toolResultLabel}
-      {body}
+      {typeof body === "string" ? <Text>{body}</Text> : body}
     </Box>
   );
 }

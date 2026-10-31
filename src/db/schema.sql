@@ -5,7 +5,11 @@ CREATE TABLE IF NOT EXISTS foods (
   kcal_per_100g REAL,
   kj_per_100g REAL,
   energy_flag TEXT,
-  source_ref TEXT
+  source_ref TEXT,
+  protein_g REAL,
+  fat_g REAL,
+  carbohydrate_total_g REAL,
+  moisture_g REAL
 );
 
 CREATE TABLE IF NOT EXISTS food_aliases (
@@ -31,6 +35,23 @@ CREATE TABLE IF NOT EXISTS recipes (
   yield_g REAL
 );
 
+CREATE TABLE IF NOT EXISTS components (
+  component TEXT PRIMARY KEY,
+  label TEXT NOT NULL,
+  unit TEXT NOT NULL,
+  infoods_tag TEXT
+);
+
+CREATE TABLE IF NOT EXISTS food_values (
+  food_code TEXT NOT NULL,
+  component TEXT NOT NULL,
+  value REAL,
+  unit TEXT NOT NULL,
+  flag TEXT,
+  raw_text TEXT,
+  PRIMARY KEY (food_code, component)
+);
+
 CREATE TABLE IF NOT EXISTS users (
   user_id TEXT PRIMARY KEY,
   daily_kcal_goal REAL,
@@ -44,5 +65,8 @@ CREATE TABLE IF NOT EXISTS meal_log (
   logged_at TEXT,
   food_id TEXT,
   grams REAL,
-  kcal REAL
+  kcal REAL,
+  protein_g REAL,
+  fat_g REAL,
+  carbohydrate_g REAL
 );
