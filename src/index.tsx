@@ -54,16 +54,6 @@ type DailyResult = {
 const VIEWPORT_HEIGHT = 14;
 const MAX_RESULT_CHARS = 900;
 const PROGRESS_BAR_WIDTH = 20;
-const COLUMN_WIDTHS = { item: 28, g: 5, kcal: 7, protein: 9, fat: 6, carbs: 8 };
-const TABLE_WIDTH =
-  COLUMN_WIDTHS.item +
-  COLUMN_WIDTHS.g +
-  COLUMN_WIDTHS.kcal +
-  COLUMN_WIDTHS.protein +
-  COLUMN_WIDTHS.fat +
-  COLUMN_WIDTHS.carbs +
-  6; // separators
-
 const BLOCK_FULL = "█";
 const BLOCK_EMPTY = "░";
 
@@ -95,42 +85,15 @@ function progressBar(consumed: number, goal: number | null): string {
   return `[${bar}] ${consumed} / ${goal} kcal, ${pct}%`;
 }
 
-function pad(text: string, width: number, align: "left" | "right" = "left"): string {
-  if (text.length >= width) return text;
-  const spaces = width - text.length;
-  return align === "right" ? " ".repeat(spaces) + text : text + " ".repeat(spaces);
-}
-
-function mealTable(result: MealResult): JSX.Element {
-  const header =
-    pad("Item", COLUMN_WIDTHS.item) +
-    " | " +
-    pad("g", COLUMN_WIDTHS.g, "right") +
-    " | " +
-    pad("kcal", COLUMN_WIDTHS.kcal, "right") +
-    " | " +
-    pad("Protein", COLUMN_WIDTHS.protein, "right") +
-    " | " +
-    pad("Fat", COLUMN_WIDTHS.fat, "right") +
-    " | " +
-    pad("Carbs", COLUMN_WIDTHS.carbs, "right");
-
-  const separator = "-".repeat(TABLE_WIDTH);
-
-  const rows = result.items.map((item) => {
-    const name = item.name_en ? truncate(item.name_en, COLUMN_WIDTHS.item) : item.food_code;
+function mealList(result: MealResult): JSX.Element {
+  const items = result.items.map((item) => {
+    const name = item.name_en ? truncate(item.name_en, 30) : item.food_code;
+    const kcal = formatKcal(item.kcal);
+    const protein = formatNutrient(item.protein_g);
+    const fat = formatNutrient(item.fat_g);
+    const carbs = formatNutrient(item.carbohydrate_g);
     const line =
-      pad(name, COLUMN_WIDTHS.item) +
-      " | " +
-      pad(String(item.grams), COLUMN_WIDTHS.g, "right") +
-      " | " +
-      pad(formatKcal(item.kcal), COLUMN_WIDTHS.kcal, "right") +
-      " | " +
-      pad(formatNutrient(item.protein_g), COLUMN_WIDTHS.protein, "right") +
-      " | " +
-      pad(formatNutrient(item.fat_g), COLUMN_WIDTHS.fat, "right") +
-      " | " +
-      pad(formatNutrient(item.carbohydrate_g), COLUMN_WIDTHS.carbs, "right");
+      `• ${name} — ${item.grams} g · ${kcal} kcal · protein ${protein} g · fat ${fat} g · carbs ${carbs} g`;
     if (!item.available) {
       return (
         <Text dimColor key={item.food_code}>
@@ -142,23 +105,12 @@ function mealTable(result: MealResult): JSX.Element {
   });
 
   const totalLine =
-    pad("Totals", COLUMN_WIDTHS.item) +
-    " | " +
-    pad("", COLUMN_WIDTHS.g, "right") +
-    " | " +
-    pad(formatKcal(result.total_kcal), COLUMN_WIDTHS.kcal, "right") +
-    " | " +
-    pad(formatNutrient(result.total_protein_g), COLUMN_WIDTHS.protein, "right") +
-    " | " +
-    pad(formatNutrient(result.total_fat_g), COLUMN_WIDTHS.fat, "right") +
-    " | " +
-    pad(formatNutrient(result.total_carbohydrate_g), COLUMN_WIDTHS.carbs, "right");
+    `----  Totals: ${formatKcal(result.total_kcal)} kcal · protein ${formatNutrient(result.total_protein_g)} g · fat ${formatNutrient(result.total_fat_g)} g · carbs ${formatNutrient(result.total_carbohydrate_g)} g`;
 
   return (
-    <Box key="meal-table">
-      <Text>{header}</Text>
-      <Text dimColor>{separator}</Text>
-      {rows}
+    <Box key="meal-list">
+      {items}
+      <Text dimColor>{"-".repeat(40)}</Text>
       <Text bold>{totalLine}</Text>
     </Box>
   );
@@ -289,7 +241,6 @@ function App(): JSX.Element {
     addMessage("user", trimmed);
     setIsThinking(true);
 
-    // Local streaming state: avoids ref null-dereference races.
     let streamingMessageId: number | null = null;
     let streamingText = "";
 
@@ -373,7 +324,7 @@ function App(): JSX.Element {
         {mealResults.map((result) => (
           <Box key={String(result.total_kcal)} marginTop={1} marginBottom={1}>
             <Text bold>Meal result</Text>
-            {mealTable(result)}
+            {mealList(result)}
           </Box>
         ))}
         {dailyResults.map((result) => (
