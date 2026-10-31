@@ -328,6 +328,8 @@ function App(): JSX.Element {
             streamingRef.current = { id, text: "" };
             setMessages((current) => [...current, { id, kind: "assistant", text: "" }]);
           }
+          // Defensive: a late chunk can arrive after streamingRef was reset.
+          if (streamingRef.current === null) return;
           streamingRef.current.text += chunk;
           setMessages((current) =>
             current.map((message) =>
