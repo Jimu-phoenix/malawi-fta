@@ -194,7 +194,7 @@ function inlineMarkdown(text: string): JSX.Element {
         if (part.startsWith("`") && part.endsWith("`") && part.length > 2) {
           return <Text color="green" key={String(index)}>{part.slice(1, -1)}</Text>;
         }
-        return part;
+        return <Text key={String(index)}>{part}</Text>;
       })}
     </Text>
   );
@@ -212,7 +212,7 @@ function renderMarkdown(text: string): JSX.Element[] {
       const content = trimmed.replace(/^[-*]\s*/, "");
       return (
         <Text key={String(lineIndex)}>
-          {"  - "}
+          <Text>  - </Text>
           {inlineMarkdown(content)}
         </Text>
       );
@@ -232,10 +232,7 @@ function MessageRow({ message }: { message: UiMessage }): JSX.Element {
   const toolCallLabel = message.kind === "tool_call" ? <Text dimColor>  ⏵ </Text> : null;
   const toolResultLabel = message.kind === "tool_result" ? <Text dimColor>  ↳ </Text> : null;
 
-  let body: JSX.Element | string | JSX.Element[] = message.text;
-  if (message.kind === "assistant") {
-    body = renderMarkdown(message.text);
-  }
+  let body: JSX.Element | JSX.Element[] = message.kind === "assistant" ? renderMarkdown(message.text) : <Text>{message.text}</Text>;
 
   return (
     <Box key={message.id} marginBottom={1}>
@@ -244,7 +241,7 @@ function MessageRow({ message }: { message: UiMessage }): JSX.Element {
       {errorLabel !== null && <>{errorLabel}<Text> </Text></>}
       {toolCallLabel}
       {toolResultLabel}
-      {typeof body === "string" ? <Text>{body}</Text> : body}
+      {body}
     </Box>
   );
 }
@@ -357,8 +354,10 @@ function App(): JSX.Element {
 
   return (
     <Box flexDirection="column" padding={1}>
-      <Text bold>Malawi Food Tracker</Text>{" "}
+      <Text bold>Malawi Food Tracker</Text>
+      <Text> </Text>
       <Text dimColor>· {config.groqModel}</Text>
+      <Text> </Text>
       <Text dimColor>Ctrl+C to quit</Text>
 
       <Box flexDirection="column" marginTop={1}>
@@ -401,7 +400,8 @@ function App(): JSX.Element {
 
       {messages.length > VIEWPORT_HEIGHT ? (
         <Text dimColor>
-          Showing {start + 1}-
+          Showing{" "}
+          {start + 1}-
           {Math.min(start + VIEWPORT_HEIGHT, messages.length)} of{" "}
           {messages.length} messages
         </Text>
