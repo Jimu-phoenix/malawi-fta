@@ -605,6 +605,15 @@ export const toolDefinitions: ChatCompletionTool[] = [
   {
     type: "function",
     function: {
+      name: "search_food",
+      description:
+        "Search the local MAFOODS table by English name or alias. Returns up to 5 candidates each with a score (0 = exact/best match) and an ambiguous flag. When ambiguous is true, several close candidates differ meaningfully and you should ask ONE clarifying question before logging.",
+      parameters: toParameters(searchFoodSchema),
+    },
+  },
+  {
+    type: "function",
+    function: {
       name: "calculate_nutrition",
       description:
         "Calculate calories, protein, fat and carbohydrate for foods using only database values. Accepts either grams, or a household measure plus count. Foods missing a value report it as unavailable instead of guessing.",
